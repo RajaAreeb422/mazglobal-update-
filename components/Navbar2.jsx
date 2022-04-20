@@ -104,12 +104,15 @@ const Navbar2 = () => {
     <div className={nav.Container}>
       <div className={nav.Wrapper}>
         <div className={nav.Topbar}>
+
+        <Link href="/" as={`/`}>
           <img
             style={{ marginTop: "8px", marginLeft: "140px", fontWeight: "200" }}
             width="25px"
             height="25px"
             src="data:image/png;base64,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"
           />
+          </Link>
           <p
             style={{
               paddingTop: "-12px",
@@ -154,7 +157,9 @@ const Navbar2 = () => {
       </Dropdown></li> */}
         <li>
         <div className={nav.dropdown}>
+        <Link href='/Product' as={`/Product`}>
          <button className={nav.dropbtn}>Products</button>
+         </Link>
           <div className={nav.dropdowncontent}>
     {/* <a href="#">Link 1</a>
     <a href="#">Link 2</a>
@@ -164,7 +169,7 @@ const Navbar2 = () => {
      </li>   
         <li>News</li>
         <li>Services</li>
-        <li>FAQ's</li>
+        <li>FAQs</li>
         <li>Contact Us</li>
 
 
