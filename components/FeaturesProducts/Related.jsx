@@ -4,7 +4,7 @@ import Highlight from "react-highlight";
 import { useState, useEffect } from "react";
 import Link from 'next/link'
 import Deals_ItemLeft from "./Deals_Item";
-import Deals_ItemRight from "./Deals_ItemRight";
+import ItemRight from "./ItemRight";
 import { useRouter } from 'next/router';
 import { DeleteOutline, Edit } from '@material-ui/icons';
 import { Icon } from "@material-ui/core";
@@ -57,10 +57,10 @@ const Related = () => {
         
           <p className={ic.h4} style={{fontWeight:'600px',marginTop:'40px',padding:'4px'}}>Related Products</p>
 
-          <Carousel style={{ width: "360px!important" }} show={3.5} slide={1} swiping={true} leftArrow={<Deals_ItemLeft/>} rightArrow={<Deals_ItemRight/>}>
+          <Carousel style={{ width: "360px!important" }} show={3.5} slide={1} swiping={true} leftArrow={<Deals_ItemLeft/>} rightArrow={<ItemRight/>}>
               {box.map((it,key) => (
                 <Link key={key} href="/category/[id]" as={`/category/${it.id}`}>
-                  <div className={ic.imgDiv} style={{marginBottom:'10px'}}>
+                  <div className={ic.imgDiv} style={{marginBottom:'60px'}}>
                   <h5 style={{ marginLeft:'10px',fontSize:'16px',fontWeight:'320' }}>{it.text}</h5>
                   <img src={it.img} height='200px' width='200px'/>
                   <p style={{ marginLeft:'20px',color:'rgba(16, 103, 138, 0.933)',fontSize:'20px' }}>{it.price} PKR</p>

@@ -248,11 +248,11 @@ const ProductDesp = () => {
             
           <div style={{display:'flex',flexDirection:'row'}}>
           <h5 style={{color:'white'}}>Part Code :</h5> 
-          <p style={{marginTop:'0px',marginLeft:'4px',color:'white'}} >  0704176-1</p> 
+          <p style={{marginTop:'20px',marginLeft:'4px',color:'white'}} >  0704176-1</p> 
           </div>
           <div style={{display:'flex',flexDirection:'row'}}>
           <h5 style={{color:'white'}}>OEM Part Number:</h5> 
-          <p style={{marginTop:'0px',marginLeft:'4px',color:'white'}}>   8980093410  </p>
+          <p style={{marginTop:'20px',marginLeft:'4px',color:'white'}}>   8980093410  </p>
           </div>
           </Desc>
 
@@ -268,7 +268,7 @@ const ProductDesp = () => {
           </Desc>
           <div style={{display:'flex',flexDirection:'row',marginLeft:'20px'}}>
           <p style={{color:'white'}}>Incl.VAT :</p>
-          <h2 style={{fontStyle:'italic',marginTop:'-10px' ,marginLeft:'4px',color:'yellow'}}>400 RS</h2>
+          <h2 style={{fontStyle:'italic',marginTop:'10px' ,marginLeft:'4px',color:'yellow'}}>400 RS</h2>
           </div>
           <AmountContainer>
               {/* onClick={() => handleCount(setCount(count - 1))} */}
