@@ -16,7 +16,9 @@ import {
 	SupervisedUserCircleOutlined,
 	LockRounded,
 	Phone,
-	LocationCity
+	LocationCity,
+	WhatsApp,
+	Email
   } from "@material-ui/icons";
 import Link from "next/link";
 import styled from "styled-components";
@@ -29,18 +31,13 @@ return (
 	<Box>
 	<Container>
 		<Row>
-		<Column style={{marginTop:'20px', marginLeft:'20px'}}>
-			{/* <Heading>About Us</Heading> */}
-			
-			<FootLink ><Link href='/SellAt' as={`/SellAt`}><Phone style={{fontSize:'38px'}}/></Link></FootLink>
-			<FootLink ><p style={{color:'whitesmoke',fontSize:'14px'}}>Phone us on</p></FootLink>
-			<FootLink > +44 (0)20 86542 7567</FootLink>
-			<FootLink > <Link href='/Rewards' as={`/Rewards`}><LocationCity style={{fontSize:'38px',marginTop:'20px'}}/></Link></FootLink>
-			<FootLink ><p style={{color:'whitesmoke',fontSize:'14px'}}>Bahria Town Phase |||</p></FootLink>
-			<FootLink ><p style={{color:'whitesmoke',fontSize:'14px',marginTop:'-6px'}}>Street 1963</p></FootLink>
-		</Column>
+
 		<Column>
-			<Heading style={{marginLeft:'0px'}}>Send Feedback</Heading>
+		<Image  height='250px' width='200px' src='/Maz Global Logo-02.png'/>
+		</Column>	
+	
+		<Column>
+			<Heading style={{marginLeft:'0px',fontWeight:'500'}}>Send Feedback</Heading>
 			<Input type='text' placeholder="Name"></Input>
 			<Input type='email' placeholder="Email"></Input>
 			<Textarea placeholder="Message"></Textarea>
@@ -53,13 +50,13 @@ return (
 			<FooterLink href="#">Indore</FooterLink>
 			<FooterLink href="#">Mumbai</FooterLink> */}
 
-			<Heading>Contact Us</Heading>
-			<FootLink href="#">Whatsapp: +090078601</FootLink>
-			<FootLink href="#">Email: customercare@pernia.pk</FootLink>
+			<Heading style={{fontWeight:'500'}}>Contact Us</Heading>
+			<FootLink href="#"><WhatsApp/>    +090078601</FootLink>
+			<FootLink href="#"><Email/>        customercare@pernia.pk</FootLink>
 			
-			<Heading>Customer Services</Heading>
-			<FootLink  ><Link href='/SellAt' as={`/SellAt`}>Terms and Conditions</Link></FootLink>
-			<FootLink><Link href='/Connect_With_Us' as={`/Connect_With_Us`} >Connect with us</Link></FootLink>
+			<Heading style={{marginTop:'20px',fontWeight:'500'}}>Customer Services</Heading>
+			<FootLink  ><Link href='/SellAt' as={`/SellAt`}><PP>Terms and Conditions</PP></Link></FootLink>
+			<FootLink><Link href='/Connect_With_Us' as={`/Connect_With_Us`} ><PP>Connect with us</PP></Link></FootLink>
 		</Column>
 		{/* <Column>
 			<Heading>Social Media</Heading>
@@ -75,8 +72,15 @@ return (
 			
 		</Column> */}
 
-		<Column>
-		<Image  height='250px' width='200px' src='/Maz Global Logo-02.png'/>
+<Column style={{marginTop:'0px', marginLeft:'20px'}}>
+			{/* <Heading>About Us</Heading> */}
+			
+			<FootLink ><Link href='/SellAt' as={`/SellAt`}><Phone style={{fontSize:'38px'}}/></Link></FootLink>
+			<FootLink ><p style={{color:'rgba(16, 103, 138, 0.933)',fontSize:'14px'}}>Phone us on</p></FootLink>
+			<FootLink > +44 (0)20 86542 7567</FootLink>
+			<FootLink > <Link href='/Rewards' as={`/Rewards`}><LocationCity style={{fontSize:'38px',marginTop:'20px'}}/></Link></FootLink>
+			<FootLink ><p style={{color:'rgba(16, 103, 138, 0.933)',fontSize:'14px'}}>Bahria Town Phase |||</p></FootLink>
+			<FootLink ><p style={{color:'rgba(16, 103, 138, 0.933)',fontSize:'14px',marginTop:'-6px'}}>Street 1963</p></FootLink>
 		</Column>
 		</Row>
 	</Container>
@@ -106,14 +110,23 @@ return (
 };
 export default Footer;
 
+const PP=styled.p` 
+text-decoration:none;
+cursor:pointer;
+color:rgba(16, 103, 138, 0.933);
+margin-top:0px;
+`
+
 const FootLink=styled.div`
  text-decoration:none;
  padding-left:40px;
- color:white;
+ margin-top:10px;
+ color:rgba(16, 103, 138, 0.933);
 `
 const Input=styled.input`
  width:200px;
  padding:6px ;
+ border-color:rgba(16, 103, 138, 0.933);
  color:white;
  border-radius:8px;
  margin-bottom:4px;
@@ -132,6 +145,7 @@ const Textarea=styled.textarea`
   width:200px;
  padding:6px ;
  color:white;
+ border-color:rgba(16, 103, 138, 0.933);
  border-radius:8px;
  margin-bottom:4px;
 `

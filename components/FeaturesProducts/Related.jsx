@@ -60,10 +60,10 @@ const Related = () => {
           <Carousel style={{ width: "360px!important" }} show={3.5} slide={1} swiping={true} leftArrow={<Deals_ItemLeft/>} rightArrow={<Deals_ItemRight/>}>
               {box.map((it,key) => (
                 <Link key={key} href="/category/[id]" as={`/category/${it.id}`}>
-                  <div className={ic.imgDiv}>
+                  <div className={ic.imgDiv} style={{marginBottom:'10px'}}>
                   <h5 style={{ marginLeft:'10px',fontSize:'16px',fontWeight:'320' }}>{it.text}</h5>
                   <img src={it.img} height='200px' width='200px'/>
-                  <p style={{ marginLeft:'20px',color:'red',fontSize:'20px' }}>{it.price} PKR</p>
+                  <p style={{ marginLeft:'20px',color:'rgba(16, 103, 138, 0.933)',fontSize:'20px' }}>{it.price} PKR</p>
                   <p style={{ marginLeft:'10px',color:'grey' }}>Incl. VAT : <strong>400 Rs</strong></p>
                   </div>
               

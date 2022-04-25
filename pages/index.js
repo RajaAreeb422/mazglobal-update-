@@ -22,7 +22,7 @@ export default function Home() {
       </div>
     <AboutUs/>
     <div style={{marginTop:'40px',marginBottom:'40px',textAlign:'center'}}>
-    <h2 style={{fontWeight:'500'}}>COMPANY OVERVIEW</h2>
+    {/* <h2 style={{fontWeight:'500'}}>COMPANY OVERVIEW</h2> */}
     </div>
     <Footer/>
     

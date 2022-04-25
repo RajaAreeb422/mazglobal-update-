@@ -80,13 +80,13 @@ const FeaturedProducts = () => {
         
           <p className={ic.h4} style={{marginTop:'30px',marginBottom:'20px'}}>Featured Products</p>
 
-          <Carousel style={{ width: "360px!important" }} show={3.5} slide={1} swiping={true} leftArrow={<Deals_ItemLeft/>} rightArrow={<Deals_ItemRight/>}>
+          <Carousel style={{ width: "360px", }} show={4} slide={1} swiping={true} leftArrow={<Deals_ItemLeft/>} rightArrow={<Deals_ItemRight/>}>
               {box.map((it,key) => (
                 <Link key={key} href="/category/[id]" as={`/category/${it.id}`}>
                   <div className={ic.imgDiv}>
                   <h5 style={{ marginLeft:'10px',fontSize:'16px',fontWeight:'320' }}>{it.text}</h5>
                   <img src={it.img} height='150px' width='150px'/>
-                  <p style={{ marginLeft:'20px',color:'red',fontSize:'20px' }}>{it.price} PKR</p>
+                  <p style={{ marginLeft:'20px',color:'rgba(16, 103, 138, 0.933)',fontSize:'20px' }}>{it.price} PKR</p>
                   <p style={{ marginLeft:'10px',color:'grey' }}>Incl. VAT : <strong>400 Rs</strong></p>
                   </div>
               

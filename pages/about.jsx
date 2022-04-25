@@ -266,18 +266,18 @@ const About = () => {
   
         
 
-        <div style={{ margin:'70px'}}>
+        <div style={{ margin:'60px'}}>
           <Productshow>
             <h2>About Us</h2>
             <P>
                 
-CHANCE  PARTS is a team of people working in truck spare parts more than 15 years.  With the development truck parts industry and technology in the last decade in China, we are also growing up with them. We save a wide and close purchase sources after years of cooperation with many truck parts manufacturers.We continuously strive to source new products of high quality and extremely competitive prices to satisfy our wide range of customers throughout all around the world.
+MAZ Global is a team of people working in truck spare parts more than 15 years.  With the development truck parts industry and technology in the last decade in China, we are also growing up with them. We save a wide and close purchase sources after years of cooperation with many truck parts manufacturers.We continuously strive to source new products of high quality and extremely competitive prices to satisfy our wide range of customers throughout all around the world.
             </P>
             <P>
 We always find that middle and small foreign importers are hard to get high quality spare parts with 
 competitive prices from different manufacturers and coordinate to make shipment smoothly.</P>
           <P>
-          Here at CHANCE  PARTS, we look to our suppliers as partners. Important partners that we count on to protect our performance and the steadfast quality CHANCE  PARTS is known for. This is why we work hard to provide you with the parts and services to improve your knowledge, more efficiently support your activities and foster a close and productive relationship with CHANCE  PARTS.
+          Here at MAZ Global, we look to our suppliers as partners. Important partners that we count on to protect our performance and the steadfast quality MAZ Global is known for. This is why we work hard to provide you with the parts and services to improve your knowledge, more efficiently support your activities and foster a close and productive relationship with MAZ Global.
           </P>
           <P>
           Our target is to be more professional and efficient purchasing company for more worldwide customers, with our good idea about truck parts from China and our One-stop services .  
@@ -285,20 +285,20 @@ competitive prices from different manufacturers and coordinate to make shipment 
 
           <P>Highlighed Products:</P>
           <ul style={{ fontWeight:'320'}}>
-           <li> AIR BRAKE SYSTEMS</li> 
-           <li> CLUTCH</li> 
-           <li> WHEEL BRAKE</li> 
-           <li> POWER STEERING PUMP</li> 
-           <li> SUSPENSION</li>   
+           <li> Air Brake Systems</li> 
+           <li> Clutch</li> 
+           <li> Wheel Brake</li> 
+           <li> Power Steering Pump</li> 
+           <li> Suspension</li>   
           </ul>
 
           <P>Main Services</P>
 
           <ul style={{ fontWeight:'320'}}>
-           <li> PRODUCTS SOURCING</li> 
-           <li>FACTORY INSPECTION</li> 
-           <li> SHIPMENT INSPECTION</li> 
-           <li>  COMBINED SHIPMENT COORDINATION</li> 
+           <li> Products Sourcing</li> 
+           <li>Factory Inspection</li> 
+           <li> Shipment Insepection</li> 
+           <li>  Combined Shipment Coordination</li> 
              
           </ul>
           </Productshow>
@@ -433,6 +433,10 @@ const Productshow = styled.div`
   padding: 20px;
   width:700px;
   margin-top:0px;
+  box-shadow: 0 10px 15px -3px rgba(46, 41, 51, 0.08),
+    0 4px 6px -2px rgba(71, 63, 79, 0.16);
+    border-style:groove;
+    border-color:whitesmoke;
   display: flex;
   border:1px solid grey;
   flex-direction: column;

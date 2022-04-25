@@ -259,7 +259,7 @@ const AllProduct = () => {
           </div>
         
 
-        <div style={{ margin:'70px'}}>
+        <div style={{ margin:'60px'}}>
           <Productshow>
             {/* spro.length==0?<> Sorry No items to show</>: */}
             {spro.map((item) => (
@@ -393,7 +393,12 @@ const Productshow = styled.div`
   width:900px;
   margin-top:0px;
   display: flex;
-  border:1px solid grey;
+  box-shadow: 0 10px 15px -3px rgba(46, 41, 51, 0.08),
+    0 4px 6px -2px rgba(71, 63, 79, 0.16);
+   
+    
+  border-color:whitesmoke;
+  border-style:groove;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;

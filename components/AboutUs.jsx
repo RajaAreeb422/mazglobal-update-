@@ -34,8 +34,8 @@ const AboutUs= () => {
       <div className={nav.mitem2}>
        <div style={{display:'flex',flexDirection:'column'}}>
        <p style={{fontWeight:'600',fontSize:'24px',marginLeft:'30px',color:'white'}}>ABOUT US</p>
-       <p style={{alignItems:'justify-content',marginLeft:'30px',color:'white'}}>CHANCE 
-        PARTS  is a team of people working in truck spare parts more than 15 years.
+       <p style={{alignItems:'justify-content',marginLeft:'30px',color:'white'}}>MAZ 
+        Global  is a team of people working in truck spare parts more than 15 years.
           With the development truck parts industry and technology in the last decade in China,
            we are also growing up with them. We save a wide and close purchase sources after years of
             cooperation with many truck parts manufacturers.We continuously strive to source new products 

@@ -30,10 +30,10 @@ const Navbar = () => {
   <nav style={{display:'flex',flexDirection:'row'}} className={nav.stick}>
      <Link href="/" as={`/`}>
        <div style={{marginLeft:'160px'}}>
-        <Image  height='100px' width='150px' src='/Maz Global Logo-02.png'/>
+        <Image  height='120px' width='180px' src='/Maz Global Logo-02.png'/>
         </div>
         </Link>
-   <ul className="menus" style={{marginLeft:'auto',marginRight:'200px'}}>
+   <ul className="menus" style={{marginLeft:'auto'}}>
     
     {menuItems.map((menu, index) => (
       <>

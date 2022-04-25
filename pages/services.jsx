@@ -255,7 +255,7 @@ const Services = () => {
           </div>
         
 
-        <div style={{ margin:'70px'}}>
+        <div style={{ margin:'60px'}}>
           <Productshow>
             <P style={{fontWeight:'400',fontSize:'24px'}}>Services</P>
             
@@ -263,19 +263,19 @@ const Services = () => {
           <P>MAIN SERVICES WE CAN PROVIDE</P>
 
           <ul style={{ fontWeight:'320'}}>
-           <li> PRODUCTS SOURCING</li> 
-           <li>FACTORY INSPECTION</li> 
-           <li> SHIPMENT INSPECTION</li> 
-           <li>  COMBINED SHIPMENT COORDINATION</li> 
+           <li> Product Sourcing</li> 
+           <li>Factory Inspection</li> 
+           <li> Shipment Inspection</li> 
+           <li>  Combined shipment Coordination</li> 
              
           </ul>
 
           <P style={{fontWeight:'320',fontSize:'24px'}}>WHAT IS OUR ADVANTAGE ?</P>
-          <P>
+          <P style={{fontWeight:'300'}}>
           Before you work with us, you might have found several China manufacturers on the internet.
            However, you still think you have not got one because you can’t know which will be the right supplier for you.   
           </P>
-          <P>
+          <P style={{fontWeight:'300'}}>
           You might get frustrated because you have been communicating with suppliers in China for months,
            but fail to move forward. You need someone from China who knows Chinese culture and can be “your eyes 
            and ears” to get more accurate information and help make the correct decision on who are the appropriate suppliers.   
@@ -300,7 +300,9 @@ const Title = styled.h1`
 `;
 
 const P= styled.p`
-  font-weight:320;
+  font-weight:200;
+  
+  font-size:16px;
 `;
 const Bar = styled.div`
    display:flex;
@@ -409,8 +411,12 @@ const Productshow = styled.div`
   padding: 20px;
   width:700px;
   margin-top:0px;
+  box-shadow: 0 10px 15px -3px rgba(46, 41, 51, 0.08),
+    0 4px 6px -2px rgba(71, 63, 79, 0.16);
+    border-style:groove;
+    border-color:whitesmoke;
   display: flex;
-  border:1px solid grey;
+  
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-between;

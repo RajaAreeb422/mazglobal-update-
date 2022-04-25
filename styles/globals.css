@@ -54,24 +54,28 @@ header {
   margin-bottom:auto;
   font-size: 24px;
   font-weight: 500;
-
+  margin-right: 200px;
+  
 }
 
 .menu-items {
   position: relative;
+  
   font-size: 14px;
+  margin-left: 0px;
 }
 
 .menu-items a {
   display: block;
-  font-size: inherit;
-  color: inherit;
+  font-size: 16px;
+  color: rgb(128, 128, 128);
   text-decoration: none;
 }
 
 .menu-items button {
-  color: inherit;
-  font-size: inherit;
+  color: grey;
+  font-size: 16px;
+  font-weight: 500;
   border: none;
   background-color: transparent;
   cursor: pointer;
@@ -80,7 +84,7 @@ header {
 
 .menu-items a,
 .menu-items button {
-  text-align: left;
+  
   padding: 0.7rem 1rem;
 }
 
@@ -90,6 +94,13 @@ header {
   color:white;
   
 }
+.menu-items button:hover {
+  background-color:rgba(16, 103, 138, 0.933);
+  color:white;
+  
+  
+}
+
 .menu-items a:active,
 .menu-items button:active{
   background-color:rgba(16, 103, 138, 0.933) !important;
@@ -110,9 +121,10 @@ header {
   left: auto;
   box-shadow: 0 10px 15px -3px rgba(46, 41, 51, 0.08),
     0 4px 6px -2px rgba(71, 63, 79, 0.16);
-  font-size: 0.875rem;
+  font-size: 14px;
   z-index: 9999;
   min-width: 10rem;
+  
   margin-bottom: -280px;
   padding: 0.5rem 0;
   list-style: none;
@@ -126,6 +138,7 @@ header {
 
 .dropdown.show {
   display: block;
+  
 }
 
 .dropdown .dropdown-submenu {

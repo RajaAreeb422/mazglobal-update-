@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Box = styled.div`
 padding: 20px 0px;
-background: #1B252D;
+background: whitesmoke;
 bottom: 0;
 width: 100%;
 
@@ -55,7 +55,8 @@ text-decoration: none;
 `;
 
 export const Heading = styled.p`
-color: #fff;
-text-decoration: underline;
+color: rgba(16, 103, 138, 0.933);
+text-decoration: none;
 margin-left:40px;
+font-size:18px;
 `;
