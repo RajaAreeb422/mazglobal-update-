@@ -13,144 +13,40 @@ import {
 import { Avatar, Badge } from "@material-ui/core";
 import router, { useRouter } from "next/router";
 import Link from "next/link";
+import Image from "next/image";
 //import nav from "../styles/navbar.module.css";
 import axios from "axios";
-//import logo from "../public/pernia.png";
-//import jwt_decode from "jwt-decode";
 
-//import NavbarToggle from 'react-bootstrap/esm/NavbarToggle';
-//import NavbarCollapse from 'react-bootstrap/esm/NavbarCollapse';
-import { Navbar, Nav } from "react-bootstrap";
-
-import { NavDropdown } from "react-bootstrap";
-import { Container } from "react-bootstrap";
-
-const Navbar2 = () => {
-//   const [blist, setBlist] = useState(false);
-//   const [loggedIn, setloggedIn] = useState("");
-//   const [user, setUser] = useState({
-//     first_name: "",
-//   });
-//   const [items, setItems] = useState([]);
-//   const [cats, setCats] = useState([]);
-//   const [coll, setColl] = useState([]);
-//   const [show, setShow] = useState(false);
-
-  //const { cartItems } = useSelector((state) => state.cart);
- 
-
-//   function mouseLeave() {
-//     clearInterval(scrollToken);
-//   }
-
-//   const showDropdown = (e) => {
-//     setShow(!show);
-//   };
-//   const hideDropdown = (e) => {
-//     setShow(false);
-//   };
-
-//   const removeToken = () => {
-//        console.log('hry removvee')
-//        localStorage.removeItem('token')
-//         router.push('/')
-//   };
-
-//   useEffect(() => {
-//     if (localStorage.getItem("token")) {
-//       setloggedIn(localStorage.getItem('token'))
-//       console.log('token',localStorage.getItem('token'))
-//       //setloggedIn("");
-//       var decoded = jwt_decode(localStorage.getItem("token"));
-//       setUser(decoded.result);
-//     } else {
-//       setloggedIn("");
-//     }
-//     let list = [];
-//     axios
-//       .get(`http://localhost:8080/ecom-api/suppliers`)
-//       .then((resp) => {
-//         resp.data.data.map((it, i) => {
-//           list.push(it);
-//         });
-//         setItems(list);
-//       })
-//       .catch((err) => console.log(err));
-
-//     axios
-//       .get(`http://localhost:8080/ecom-api/categories`)
-//       .then((resp) => {
-//         setCats(resp.data.data);
-//       })
-//       .catch((err) => console.log(err));
-//     axios
-//       .get(`http://localhost:8080/ecom-api/collections`)
-//       .then((respo) => {
-//         setColl(respo.data.data);
-//       })
-//       .catch((err) => console.log(err));
-//   }, []);
-  return (
-    // className={nav.Container}
-    <div>
-        {/* className={nav.Wrapper} */}
-      <div >
-      {/* className={nav.Topbar} */}
-        <div style={{display:'flex',flexDirection:'row',backgroundColor:'whitesmoke'}} >
-         <div>
-           
-           <p>+92-3315677071</p>  
-         </div>
-
-         <div>
-           
-           <p>mazglobal@gmail.com</p>  
-         </div>
-         <input type="text" placeholder="Search Product" />
-         <div
-       //  className={nav.Search}
-        style={{ color: "gray", fontSize: 18 }}
-        />
-        <Navbar
-        variant="dark"
-        bg="dark"
-        expand="lg"
-        style={{ marginTop: "-60px" }}
-      >
-        <Container fluid>
-          <Navbar.Brand href="#home"></Navbar.Brand>
-          <Navbar.Toggle aria-controls="navbar-dark-example" />
-          <Navbar.Collapse id="navbar-dark-example">
-            <Nav style={{ marginLeft: "auto", marginRight: "auto" }}>
-              <NavDropdown
-                style={{ marginLeft: "10px" }}
-                id="nav-dropdown-dark-example"
-                title="NewIn"
-                menuVariant="dark"
-              >
-                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">
-                  Another action
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">
-                  Something
-                </NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="#action/3.4">
-                  Separated link
-                </NavDropdown.Item>
-              </NavDropdown>
-          </Nav>
-         </Navbar.Collapse>
-       </Container> 
-        </Navbar>
+import { menuItems } from "./menuItems";
+import Menu from "./Menu";
+import Carosel from "./Carosel";
+import nav from "../styles/navbar.module.css";
+const Navbar = () => {
+  useEffect(() => {
+    // alert('Finished loading');
+  }, []);
+  const depthLevel = 0;
+ return (
+  <nav style={{display:'flex',flexDirection:'row'}} className={nav.stick}>
+     <Link href="/" as={`/`}>
+       <div style={{marginLeft:'160px'}}>
+        <Image  height='100px' width='150px' src='/Maz Global Logo-02.png'/>
         </div>
-        </div>
-        </div>
-  );
+        </Link>
+   <ul className="menus" style={{marginLeft:'auto',marginRight:'200px'}}>
+    
+    {menuItems.map((menu, index) => (
+      <>
+     
+     <Menu className={nav.list} items={menu} depthLevel={depthLevel}/>
+     </>
+    ))}
+   </ul>
+  </nav>
+ );
 };
 
-export default Navbar2;            
+export default Navbar;         
          
           {/* <div className={nav.MeniItems}>
             <div className={nav.StyledLink} href="/">

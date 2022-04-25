@@ -10,6 +10,10 @@ import { DeleteOutline, Edit } from '@material-ui/icons';
 import { Icon } from "@material-ui/core";
 import ic from '../../styles/feature.module.css'
 const FeaturedProducts = () => {
+
+  useEffect(() => {
+    // alert('Finished loading');
+  }, []);
   const [box, setBox] = useState([
     {
       id: 1,
@@ -35,6 +39,30 @@ const FeaturedProducts = () => {
       price:7000,
       img: "https://www.ks-international.com/media/catalog/product/cache/5cbd42b6a5a30dbac7552a8bcebb8809/0/7/0700480_1.webp",
     },
+    {
+      id: 5,
+      text: "Web.C HandBrake",
+      price:7000,
+      img:'https://www.chanceparts.com/Uploads/pro/Wabco-Air-processing-unit-9325100090.353.1.jpg'
+    },
+    {
+      id: 6,
+      text: "Web Co Air Processing",
+      price:7000,
+      img:'https://www.chanceparts.com/Wabco-Hand-brake-valve-9617242040-9617242000-p.html'
+    },
+    {
+      id: 7,
+      text: "Solenoid",
+      price:7000,
+      img:'https://www.chanceparts.com/Uploads/pro/Knorr-ECAS-Solenoid-valve-K019820N50.372.1.jpg'
+    },
+    {
+      id: 8,
+      text: "Clutch",
+      price:7000,
+      img:'https://www.chanceparts.com/Uploads/pro/Knorr-Clutch-actuator-K013727N50K015874N50K013727N04K013727N03K013727N02.406.1.jpg'
+    }
   ]);
 
   const borderstyle={
@@ -50,14 +78,14 @@ const FeaturedProducts = () => {
         }}
       >
         
-          <p className={ic.h4}>Featured Products</p>
+          <p className={ic.h4} style={{marginTop:'30px',marginBottom:'20px'}}>Featured Products</p>
 
           <Carousel style={{ width: "360px!important" }} show={3.5} slide={1} swiping={true} leftArrow={<Deals_ItemLeft/>} rightArrow={<Deals_ItemRight/>}>
               {box.map((it,key) => (
                 <Link key={key} href="/category/[id]" as={`/category/${it.id}`}>
                   <div className={ic.imgDiv}>
-                  <h5 style={{ marginLeft:'10px' }}>{it.text}</h5>
-                  <img src={it.img} height='200px' width='200px'/>
+                  <h5 style={{ marginLeft:'10px',fontSize:'16px',fontWeight:'320' }}>{it.text}</h5>
+                  <img src={it.img} height='150px' width='150px'/>
                   <p style={{ marginLeft:'20px',color:'red',fontSize:'20px' }}>{it.price} PKR</p>
                   <p style={{ marginLeft:'10px',color:'grey' }}>Incl. VAT : <strong>400 Rs</strong></p>
                   </div>

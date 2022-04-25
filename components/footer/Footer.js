@@ -1,5 +1,6 @@
 import React from "react";
-
+import Image from "next/image";
+import { useEffect, useState } from "react";
 import {
 Box,
 Container,
@@ -20,6 +21,9 @@ import {
 import Link from "next/link";
 import styled from "styled-components";
 const Footer = () => {
+	useEffect(() => {
+		// alert('Finished loading');
+	  }, []);
 return (
 
 	<Box>
@@ -36,13 +40,11 @@ return (
 			<FootLink ><p style={{color:'whitesmoke',fontSize:'14px',marginTop:'-6px'}}>Street 1963</p></FootLink>
 		</Column>
 		<Column>
-			<Heading>Find it Fast</Heading>
-			<FootLink ><Link href='/Track' as={`/Track`}>Hino Parts</Link></FootLink>
-			<FootLink ><Link href='/ShipAndDlv' as={`/ShipAndDlv`}>Isuzu Parts</Link></FootLink>
-			<FootLink ><Link href='/Cancellation' as={`/Cancellation`}>Faw Parts</Link></FootLink>
-		
-			<FootLink><Link href='/Exchange' as={`/Exchange`}>Prince Parts</Link></FootLink>
-			<FootLink><Link href='/Refund' as={`/Refund`}>Procon Parts</Link></FootLink>
+			<Heading style={{marginLeft:'0px'}}>Send Feedback</Heading>
+			<Input type='text' placeholder="Name"></Input>
+			<Input type='email' placeholder="Email"></Input>
+			<Textarea placeholder="Message"></Textarea>
+            <Button>Submit</Button>
 		</Column>
 		<Column>
 			{/* <Heading>Contact Us</Heading>
@@ -56,11 +58,11 @@ return (
 			<FootLink href="#">Email: customercare@pernia.pk</FootLink>
 			
 			<Heading>Customer Services</Heading>
-			<FootLink ><Link href='/SellAt' as={`/SellAt`}>Terms and Conditions</Link></FootLink>
+			<FootLink  ><Link href='/SellAt' as={`/SellAt`}>Terms and Conditions</Link></FootLink>
 			<FootLink><Link href='/Connect_With_Us' as={`/Connect_With_Us`} >Connect with us</Link></FootLink>
 		</Column>
-		<Column>
-			{/* <Heading>Social Media</Heading> */}
+		{/* <Column>
+			<Heading>Social Media</Heading>
 			<FooterLink href="#">
 			<i className="fab fa-facebook-f">
 				<span style={{ marginLeft: "10px" }}>
@@ -71,6 +73,10 @@ return (
 			</i>
 			</FooterLink>
 			
+		</Column> */}
+
+		<Column>
+		<Image  height='250px' width='200px' src='/Maz Global Logo-02.png'/>
 		</Column>
 		</Row>
 	</Container>
@@ -99,10 +105,34 @@ return (
 );
 };
 export default Footer;
+
 const FootLink=styled.div`
  text-decoration:none;
  padding-left:40px;
  color:white;
 `
+const Input=styled.input`
+ width:200px;
+ padding:6px ;
+ color:white;
+ border-radius:8px;
+ margin-bottom:4px;
+`
 
+ const Button=styled.button`
+ width:100px;
+ padding:6px ;
+ color:white;
+ border-radius:8px;
+ background-color:rgba(16, 103, 138, 0.933);
+`
+
+
+const Textarea=styled.textarea`
+  width:200px;
+ padding:6px ;
+ color:white;
+ border-radius:8px;
+ margin-bottom:4px;
+`
 

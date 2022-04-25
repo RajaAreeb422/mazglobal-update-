@@ -14,18 +14,21 @@ import React, { memo } from "react";
 //import { useLocation } from "react-router";
 // import { publicRequest } from "../requestMethods";
 //import { useDispatch, useSelector } from 'react-redux';
-import { Modal, ModalBody, ModalFooter, ModalHeader } from "reactstrap";
+import { Modal, ModalBody, ModalFooter, ModalHeader,Table } from "reactstrap";
 //import { Carousel } from 'react-responsive-carousel';
 import router from "next/router";
 //import {toast} from 'react-toastify';
 //import 'react-toastify/dist/ReactToastify.css';
 //toast.configure()
 import ImageMagnifier from "./ImageMagnifier";
+
 import Related from '../../../components/FeaturesProducts/Related'
 //import Rating from '@material-ui/lab/Rating';
 //import Typography from "@material-ui/core/Typography";
 //import Box from '@material-ui/core/Box';
 import css from './index.module.css'
+import Navbar from "../../../components/Navbar";
+import DataGrid from 'react-data-grid';
 const ProductDesp = () => {
   const [ratingValue, setRatingValue] = useState(0);
   const [review, setReview] = useState(0);
@@ -101,6 +104,7 @@ const ProductDesp = () => {
     //     })
     //     // console.log("price", comb)
     //   }
+    
 
     return (
       <label>
@@ -182,13 +186,30 @@ const ProductDesp = () => {
     selected: "",
     name: "",
   });
+  
+  const columns = [
+    { key: 'name', name: 'Name' },
+    { key: 'descp', name: 'Description' }
+  ];
+  
+  const rows = [
+    { name: 'Product Name', descp: 'suzu D-Max TFS77 3.0TD 4JH1 (07/2003-08/2006) RETAINER - REAR AXLE' },
+  
+    { name: 'Chane No', descp: '0704176-1' },
+    { name: 'OEM No', descp: '8980093410' },
+    { name: 'Cross Ref', descp: '' },
+    { name: 'Apllication', descp: ' European truck' },
+   
+    { name: 'Package', descp: '1.PP bag+individual box+outer carton +pallet.' },
 
+  ];
   return (
     <>
-    <Navbar2 />
+    <Navbar2/>
+    <Navbar/>
+    <img src='https://www.chanceparts.com/Uploads/info/60ccb07493e7c.jpg' width='100%'/>
     <Container>
       
-      <hr width='1520px'/>
       <Wrapper>
         <Boxx>
           <Arrow direction="left" onClick={() => handleClick("left")}>
@@ -227,11 +248,11 @@ const ProductDesp = () => {
             
           <div style={{display:'flex',flexDirection:'row'}}>
           <h5 style={{color:'white'}}>Part Code :</h5> 
-          <p style={{marginTop:'20px',marginLeft:'4px',color:'white'}} >  0704176-1</p> 
+          <p style={{marginTop:'0px',marginLeft:'4px',color:'white'}} >  0704176-1</p> 
           </div>
           <div style={{display:'flex',flexDirection:'row'}}>
           <h5 style={{color:'white'}}>OEM Part Number:</h5> 
-          <p style={{marginTop:'20px',marginLeft:'4px',color:'white'}}>   8980093410  </p>
+          <p style={{marginTop:'0px',marginLeft:'4px',color:'white'}}>   8980093410  </p>
           </div>
           </Desc>
 
@@ -247,11 +268,11 @@ const ProductDesp = () => {
           </Desc>
           <div style={{display:'flex',flexDirection:'row',marginLeft:'20px'}}>
           <p style={{color:'white'}}>Incl.VAT :</p>
-          <h2 style={{fontStyle:'italic',marginTop:'12px' ,marginLeft:'4px',color:'white'}}>400 RS</h2>
+          <h2 style={{fontStyle:'italic',marginTop:'-10px' ,marginLeft:'4px',color:'yellow'}}>400 RS</h2>
           </div>
           <AmountContainer>
               {/* onClick={() => handleCount(setCount(count - 1))} */}
-              <p style={{ fontWeight: "600",fontSize:'20px',marginLeft:'20px',color:'white' }}>PKR. 20,000</p>
+              <p style={{ fontWeight: "600",fontSize:'20px',marginLeft:'20px',color:'yellow' }}>PKR. 20,000</p>
               <span><button className={css.minus_btn} onClick={decCount}>-</button></span>
               <span><p className={css.counter} style={{color:'white'}}>{count}</p></span>
               <span><button className={css.add_btn} onClick={incrementCount}>+</button></span>
@@ -276,10 +297,26 @@ const ProductDesp = () => {
          
         </InfoContainer>
 
+
+        
+
         
 
       </Wrapper>
+      <MainDiv>
+         <div style={{background:'rgba(16, 103, 138, 0.933)' ,padding:'1px',width:'160px'}}>
+          <h5 style={{color:'white',textAlign:'center'}}>DESCRIPTION</h5>
+         </div> 
+         <hr width='860px'  style={{color:'rgba(16, 103, 138, 0.933)',height:'2px',marginTop:'-2px'}}/>
+         <SmallDiv>
+         <div style={{background:'whitesmoke' ,padding:'1px',width:'100px'}}>
+          <h5 style={{textAlign:'center'}} >DETAILS</h5>
+         </div> 
+         <hr width='800px'  style={{color:'grey',height:'2px',marginTop:'-2px'}}/> 
+         <DataGrid columns={columns} rows={rows} />
+         </SmallDiv> 
 
+        </MainDiv>
       
 
       <Related/>
@@ -292,9 +329,18 @@ const ProductDesp = () => {
 
 export default ProductDesp;
 
-const FilterTitle = styled.span`
-  font-size: 20px;
-  font-weight: 200;
+const MainDiv = styled.div`
+  border:1px groove whitesmoke;
+  width:860px;
+  margin-left:auto;
+  margin-right:auto;
+`;
+const SmallDiv = styled.div`
+  
+  width:800px;
+  margin-bottom:30px;
+  margin-left:auto;
+  margin-right:auto;
 `;
 const P = styled.p`
 text-align:center;
@@ -306,6 +352,7 @@ const Ndiv = styled.div`
   background-color:whitesmoke;
   width:300px;
   text-align:center;
+  margin-bottom:20px;
   margin-left:20px;
   height:40px;
 `;
@@ -405,7 +452,7 @@ const Image = styled.img`
 
 const InfoContainer = styled.div`
   margin-left: 50px;
-  background: linear-gradient(to right, rgba(54, 85, 164, 0.907) , black);
+  background: linear-gradient(to right, rgba(16, 103, 138, 0.933) , black);
   width: 400px;
   height:640px;
   margin-top: 100px;

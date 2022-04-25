@@ -27,14 +27,16 @@ import { NavDropdown,Form,FormControl,Button } from "react-bootstrap";
 import { Container } from "react-bootstrap";
 
 const Mission = () => {
-  
+  useEffect(() => {
+    // alert('Finished loading');
+  }, []);
   return (
     <div className={nav.mission}>
       <div className={nav.mitem}>
        <Settings style={{height:'100px',width:'100px'}}/>
        <div style={{display:'flex',flexDirection:'column'}}>
        <p style={{fontWeight:'600',fontSize:'20px',textAlign:'center'}}>OUR MISSION</p>
-       <p style={{alignItems:'justify-content',marginLeft:'30px'}}>Help middle and small foreign importers to get quality aftermarket products  
+       <p style={{alignItems:'justify-content',marginLeft:'40px'}}>Help middle and small foreign importers to get quality aftermarket products  
            from professional manufacturers and make their purchase activity smoothly in China .</p>
       </div>
       </div>
@@ -42,15 +44,15 @@ const Mission = () => {
        <Settings style={{height:'100px',width:'100px'}}/>
        <div style={{display:'flex',flexDirection:'column'}}>
        <p style={{fontWeight:'600',fontSize:'20px',textAlign:'center'}}>OUR QUALITY</p>
-       <p style={{alignItems:'justify-content',marginLeft:'30px'}}>
-More than 15 years experience working  together with our suppliers with our strick testing and inspection before shipment, sustain a warranty rate of below 0.5%.</p>
+       <p style={{alignItems:'justify-content',marginLeft:'40px'}}>
+      More than 15 years experience working  together with our suppliers with our strick testing and inspection before shipment, sustain a warranty rate of below 0.5%.</p>
       </div>
       </div>
       <div className={nav.mitem}>
        <Settings style={{height:'100px',width:'100px'}}/>
        <div style={{display:'flex',flexDirection:'column'}}>
        <p style={{fontWeight:'600',fontSize:'20px',textAlign:'center'}}>OUR SUPPLIERS</p>
-       <p style={{alignItems:'justify-content',marginLeft:'30px'}}>Help middle and small foreign importers to get quality aftermarket products  
+       <p style={{alignItems:'justify-content',marginLeft:'40px'}}>Help middle and small foreign importers to get quality aftermarket products  
            from professional manufacturers and make their purchase activity smoothly in China .</p>
       </div>
       </div>

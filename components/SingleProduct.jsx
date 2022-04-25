@@ -22,7 +22,7 @@ import {
     }, [])
     return (
   
-  
+      <Link href='/productdescp/[id]' as={`/productdescp/${item.id}`} >
       <Container>
         
         {/* <Circle /> */}
@@ -40,21 +40,18 @@ import {
           <p>Incl Val:{item.tax}</p> 
 
         <Info>
-          <Icon>
-            <ShoppingCartOutlined />
-          </Icon>
+         
           <Link href='/productdescp/[id]' as={`/productdescp/${item.id}`} >
             <Icon >
               <SearchOutlined />
             </Icon>
           </Link>
-          <Icon>
-            <FavoriteBorderOutlined />
-          </Icon>
+          
   
         </Info>
         
       </Container>
+      </Link>
     );
   };
   

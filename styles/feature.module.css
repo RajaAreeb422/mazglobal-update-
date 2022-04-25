@@ -1,10 +1,18 @@
 .Container{
-    width:1000px;
+    width: 1000px;
     margin-left: auto;
     margin-right: auto;
  
  
      }
+
+     .Container2{
+        width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+       background-color: whitesmoke;
+     
+         }
 
      .h4{
         text-align: center;
@@ -16,15 +24,16 @@
             flex-direction:'column';
             align-content:'space-between';
             transition: transform .2s;
-            border-left: 4px solid whitesmoke;
+            
+            border-left: 1px solid grey;
             height: 300px;
-            padding-left:'6px';
+            padding-left:'2px';
           
     }
     .imgDiv :hover{
         transition:scale(1.6);
-        transition-delay: 0.1s;
-        height:300px;
+        transition-delay: 0.1s ease;
+        height:200px;
         width:200px;
         box-shadow: 0 2px 2px rgb(11 25 28 / 10%);
     }

@@ -7,10 +7,14 @@ import Slider from '../components/Slider'
 import Mission from '../components/Mission'
 import FeaturedProducts from '../components/FeaturesProducts/FeaturedProducts'
 import AboutUs from '../components/AboutUs'
+import CustomNav from '../components/CustomNav'
+import Navbar from '../components/Navbar'
 export default function Home() {
   return (
     <>
     <Navbar2/>
+    <Navbar/>
+    
     <Slider/>
     <Mission/>
     <FeaturedProducts/>

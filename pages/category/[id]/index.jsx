@@ -1,16 +1,17 @@
 import styled from "styled-components";
 
-import Navbar2 from "../components/Navbar2";
+import Navbar2 from "../../../components/Navbar2";
 //import Navbar1 from "../components/Navbar1";
-import Footer from "../components/footer/Footer";
+import Footer from "../../../components/footer/Footer";
 import { useEffect, useState } from "react";
 //import ProductItem from "../../../components/ProductItem";
-import SingleProduct from "../components/SingleProduct";
+import SingleProduct from "../../../components/SingleProduct";
 import { HomeOutlined,Category } from "@material-ui/icons";
+import Navbar from "../../../components/Navbar";
 //import axios from "axios";
 //import Pagination from '@material-ui/lab/Pagination';
 
-const AllProduct = () => {
+const Index = () => {
   const [page, setPage] = useState(1);
   const [items, setItems] = useState([]);
   const [color, setColorProduct] = useState([]);
@@ -63,30 +64,7 @@ const AllProduct = () => {
       sku: "0700185",
       price: 4000,
     },
-    {
-      id: 7,
-      img: "https://www.ks-international.com/media/catalog/product/cache/5cbd42b6a5a30dbac7552a8bcebb8809/0/0/0012736-web.webp",
-      name: "REAR AXLE WHEEL BEARING KIT",
-      tax: "36.00 RS",
-      sku: "0700185",
-      price: 4000,
-    },
-    {
-      id: 8,
-      img: "https://www.ks-international.com/media/catalog/product/cache/5cbd42b6a5a30dbac7552a8bcebb8809/0/0/0011706-web.webp",
-      name: "REAR AXLE WHEEL BEARING KIT",
-      tax: "36.00 RS",
-      sku: "0700185",
-      price: 4000,
-    },
-    {
-      id: 9,
-      img: "https://www.ks-international.com/media/catalog/product/cache/5cbd42b6a5a30dbac7552a8bcebb8809/0/0/0012368K.webp",
-      name: "REAR AXLE WHEEL BEARING KIT",
-      tax: "36.00 RS",
-      sku: "0700185",
-      price: 4000,
-    },
+   
     
   ]);
   useEffect(() => {
@@ -145,6 +123,7 @@ const AllProduct = () => {
   return (
     <>
       <Navbar2/>
+      <Navbar/>
       <img src='https://www.chanceparts.com/Uploads/info/60ccb07493e7c.jpg' width='100%'/>
       <Container>
         {/* <FilterContainer>
@@ -159,10 +138,12 @@ const AllProduct = () => {
         </FilterContainer> */}
 
         
+      
+<div style={{display:'flex',flexDirection:'column'}}>
           <LeftBar>
             <Filter>
               <Bar>
-                <div style={{backgroundColor:'red',width:'50px',height:'50px'}}>
+                <div style={{backgroundColor:'rgba(16, 103, 138, 0.933)',width:'50px',height:'50px'}}>
                 <Category style={{color:'white',marginTop:'8px'}} />
                 </div>
               <FilterTitle >
@@ -212,7 +193,54 @@ const AllProduct = () => {
             </Filter>
           </LeftBar>
 
+          <SearchBar>
+            <Filter>
+              <Bar>
+                <div style={{backgroundColor:'rgba(16, 103, 138, 0.933)',width:'50px',height:'50px'}}>
+                <Category style={{color:'white',marginTop:'8px'}} />
+                </div>
+              <FilterTitle >
+                SEARCH
+              </FilterTitle>
+              </Bar>
+              <hr width="245px" style={{marginTop:'-2px'}} />
+              <FilterText >
+              Product Search
+              </FilterText>
+              <input type='text' className="form-control" placeholder="Enter OEM no, Chance no etc"
+              style={{borderRadius:'8px',background:'whitesmoke',width:'220px',height:'40px',padding:'8px',marginLeft:'10px',marginTop:'10px'}}
+              />
+              <FilterText >
+              Product Categories
+              </FilterText>
+              <select className="form-control"
+               style={{borderRadius:'8px',background:'whitesmoke',width:'220px',height:'40px',padding:'8px',marginLeft:'10px', marginTop:'10px'}}
   
+              >
+                 <option>Air Brake System</option> 
+                 <option>Suspension</option> 
+                 <option>Body parts</option> 
+                 <option>Engine</option> 
+              </select>
+              
+
+              <FilterText >
+              Vehicle
+              </FilterText>
+              <select className="form-control"
+               style={{borderRadius:'8px',background:'whitesmoke',width:'220px',height:'40px',padding:'8px',marginLeft:'10px', marginTop:'10px'}}
+  
+              >
+                 <option>BMW</option> 
+                 <option>Toyota</option> 
+                 <option>Honda</option> 
+                 <option>MG</option> 
+              </select>
+              <button style={{marginBottom:'10px',height:'40px',width:'100px',marginLeft:'10px',marginRight:'auto',marginTop:'20px',backgroundColor:'rgba(16, 103, 138, 0.933)',color:'white'}}>Search</button>
+              
+            </Filter>
+          </SearchBar>
+          </div>
         
 
         <div style={{ margin:'70px'}}>
@@ -234,7 +262,7 @@ const AllProduct = () => {
   );
 };
 
-export default AllProduct;
+export default Index;
 
 const Title = styled.h1`
   margin: 20px;
@@ -294,12 +322,23 @@ const LeftBar = styled.div`
   margin-left: 30px;
   margin-top: 55px;
   width: 250px;
-  height:470px;
+ 
   border-color: whitesmoke;
   border-style: groove;
   // border-style:groove;
   box-shadow: 0 2px 2px rgb(11 25 28 / 10%);
 `;
+const SearchBar = styled.div`
+  margin-left: 30px;
+  margin-top: 55px;
+  width: 250px;
+  margin-bottom:40px;
+  border-color: whitesmoke;
+  border-style: groove;
+  // border-style:groove;
+  box-shadow: 0 2px 2px rgb(11 25 28 / 10%);
+`;
+
 const Right = styled.div`
   margin-left: 30px;
 `;
@@ -308,7 +347,7 @@ const FilterText = styled.span`
   font-size: 14px;
   padding: 8px;
   
-  margin-left: 20px;
+  margin-left: 10px;
 `;
 const FilterHomeText = styled.span`
   font-size: 14px;
@@ -321,9 +360,9 @@ const SortText = styled.span`
   font-size: 14px;
 `;
 const FilterTitle = styled.span`
-  font-size: 16px;
+   font-size: 14px;
   font-weight: 500;
-  padding: 8px;
+  padding: 4px;
   background-color: whitesmoke;
 `;
 
@@ -335,7 +374,7 @@ const Option = styled.option``;
 
 const Productshow = styled.div`
   padding: 20px;
-  width:700px;
+  width:900px;
   margin-top:0px;
   display: flex;
   border:1px solid grey;
@@ -353,260 +392,3 @@ flex-direction:row;
   margin-right: auto;
 `;
 
-
-// import styled from "styled-components";
-// //import Announcement from "../../../components/Announcement";
-// import Navbar from "../../../components/Navbar"
-// import Footer from "../../../components/footer/Footer";
-// import { useEffect, useState } from 'react';
-// //import css from '../index.module.css';
-
-// import {
-//     HomeOutlined
-//   } from "@material-ui/icons";
-// //import axios from "axios";
-// import SingleProduct from "../../../components/SingleProduct";
-
-// import { useRouter } from 'next/router'
-
-// const AllProduct = () => {
-//     const router = useRouter();
-//     const { id } = router.query;
-//     const [items, setItems] = useState([])
-//     const [pro, setPro] = useState([
-//       {
-//         id: 1,
-//         img: "https://www.ks-international.com/media/catalog/product/cache/5cbd42b6a5a30dbac7552a8bcebb8809/0/7/0700185_2.webp",
-//         name: "REAR AXLE WHEEL BEARING KIT",
-//         tax: "36.00 RS",
-//         sku: "0700185",
-//         price: 4000,
-//       },
-//       {
-//         id: 2,
-//         img: "https://www.ks-international.com/media/catalog/product/cache/5cbd42b6a5a30dbac7552a8bcebb8809/0/7/0700185_2.webp",
-//         name: "REAR AXLE WHEEL BEARING KIT",
-//         tax: "36.00 RS",
-//         sku: "0700185",
-//         price: 4000,
-//       },
-//       {
-//         id: 3,
-//         img: "https://www.ks-international.com/media/catalog/product/cache/5cbd42b6a5a30dbac7552a8bcebb8809/0/7/0700185_2.webp",
-//         name: "REAR AXLE WHEEL BEARING KIT",
-//         tax: "36.00 RS",
-//         sku: "0700185",
-//         price: 4000,
-//       },
-//       {
-//         id: 4,
-//         img: "https://www.ks-international.com/media/catalog/product/cache/5cbd42b6a5a30dbac7552a8bcebb8809/0/7/0700185_2.webp",
-//         name: "REAR AXLE WHEEL BEARING KIT",
-//         tax: "36.00 RS",
-//         sku: "0700185",
-//         price: 4000,
-//       },
-//       {
-//         id: 5,
-//         img: "https://www.ks-international.com/media/catalog/product/cache/5cbd42b6a5a30dbac7552a8bcebb8809/0/7/0700185_2.webp",
-//         name: "REAR AXLE WHEEL BEARING KIT",
-//         tax: "36.00 RS",
-//         sku: "0700185",
-//         price: 4000,
-//       },
-//     ])
-//     const [cat, setCategory] = useState({
-//         id:null,
-//         name:'',
-//         parent:'',
-//         status:0
-//     })
-//     useEffect(() => {
-        
-     
-           
-//     }, [])
-
-//     const handleSelectChange=(e)=>{     
-        
-      
-        
-//     }
-//     function Sort(slist,value)
-//     {
-      
-//     }
-
-
-
-// {/* {items.length==0? <div style={{marginLeft:'auto',marginRight:'auto',marginTop:'200px',fontSize:'22px'}}>
-//                 Sorry! ..Stock is Empty of this Category</div>:
-//                 <> */}
-
-//        {/* {
-//                  spro.map((item) => (
-//                     <ProductItem item={item} key={item.id} />
-
-//                 ))} */}          
-
-//     return (
-//         <>
-//         <Container>
-           
-//             <Navbar />
-//             <hr width='1520px'/>
-// {/*          
-//             <Title>Home</Title> */}
-            
-//             <FilterContainer>
-            
-//             <FilterHome>
-//                 <FilterHomeText>
-//                     <HomeOutlined/>
-//                     </FilterHomeText>
-//                     <FilterHomeText>
-//                         {">"} Unstiched {">"} Lawn
-//                     </FilterHomeText>
-//             </FilterHome>
-                
-                
-                    
-               
-               
-
-//             </FilterContainer>
-            
-//             <GridArea>
-//           <LeftBar>
-//             <Filter>
-//               <FilterTitle style={{ backgroundColor: "white" }}>
-//                 Categories
-//               </FilterTitle>
-//               <hr width="200px" />
-//               <FilterText style={{ backgroundColor: "white" }}>
-//                FAW
-//               </FilterText>
-//               <hr width="200px" />
-//             </Filter>
-//           </LeftBar>
-
-//           <Right>
-//             <h2>Real Axle</h2>
-//           </Right>
-      
-
-            
-//             <Productshow>
-//               {pro.map(it=>(
-//                  <SingleProduct item={it}/>
-                 
-//               ))
-
-//               }         
-       
-//             </Productshow>
-
-
-//             </GridArea>
-            
-
-         
-//         </Container>
-//          <Footer/> 
-//        </>
-//     );
-// };
-
-// export default AllProduct;
-
-
-
-
-
-
-// const Container = styled.div``;
-
-// const Title = styled.h1`
-//   margin: 20px;
-//   text-align: center;
-// `;
-
-// const Right = styled.div`
-//   margin-left: 30px;
-// `;
-// const FilterContainer = styled.div`
-// margin-top:20px;
-//   display: flex;
-//   justify-content: space-between;
-// `;
-// const GridArea = styled.div`
-//   display: flex;
-//   flex-direction:row;
-//   height:200px;
-  
-//   justify-content: space-between;
-// `;
-
-// const Filter = styled.div`
-//   //margin: 20px;
-//   display:flex;
-//   flex-direction:column;
-  
-//   //height:40px;
-//   // background-color:white;
-// `;
-
-// const FilterHome = styled.div`
-//   //margin: 20px;
-//   display:flex;
-//   flex-direction:row;
-//   margin-left:30px
-//   //height:40px;
-  
-// `;
-// const LeftBar = styled.div`
-//   margin-left:30px;
-//   margin-top:25px;
-//   width:650px;
-//   height:800px;
-//   // border-style:groove;
-//   box-shadow: 0 2px 2px rgb(11 25 28 / 10%);
-// `;
-
-// const FilterText = styled.span`
-//   font-size: 14px;
-//   padding:20px;
-//   margin-left:20px
-// `;
-// const FilterHomeText = styled.span`
-//   font-size: 14px;
-//   padding:6px;
-//   /* padding:20px;
-//   margin-top: 10px;
-//   margin-left:20px */
-// `;
-// const SortText = styled.span`
-//   font-size: 14px;
-  
-  
-// `;
-// const FilterTitle = styled.span`
-//   font-size: 16px;
-//   font-weight: 700;
-//   padding:20px;
-//   background-color:whitesmoke;
-// `;
-
-// const Select = styled.select`
-//   padding: 10px;
-//   margin-right: 20px;
-// `;
-// const Option = styled.option``;
-
-// const Productshow = styled.div`
-//     padding: 20px;
-//     display: flex;
-//     flex-direction:row;
-//     flex-wrap: wrap;
-//     justify-content: space-between;
-// `;

@@ -10,6 +10,10 @@ import { DeleteOutline, Edit } from '@material-ui/icons';
 import { Icon } from "@material-ui/core";
 import ic from '../../styles/feature.module.css'
 const Related = () => {
+
+  useEffect(() => {
+    // alert('Finished loading');
+  }, []);
   const [box, setBox] = useState([
     {
       id: 1,
@@ -41,22 +45,23 @@ const Related = () => {
     borderTop:'20px solid #F7F7F7',
   }
   return (
-    <div className={ic.Container}>
+    <div className={ic.Container2}>
       <div
         style={{
-          backgroundColor: "white",
+          backgroundColor: "whitesmoke",
           marginLeft: "-30px",
           marginRight: "-30px",
+          marginBottom:'20px'
         }}
       >
         
-          <p className={ic.h4} style={{fontWeight:'600px',marginTop:'40px'}}>Related Products</p>
+          <p className={ic.h4} style={{fontWeight:'600px',marginTop:'40px',padding:'4px'}}>Related Products</p>
 
           <Carousel style={{ width: "360px!important" }} show={3.5} slide={1} swiping={true} leftArrow={<Deals_ItemLeft/>} rightArrow={<Deals_ItemRight/>}>
               {box.map((it,key) => (
                 <Link key={key} href="/category/[id]" as={`/category/${it.id}`}>
                   <div className={ic.imgDiv}>
-                  <h5 style={{ marginLeft:'10px' }}>{it.text}</h5>
+                  <h5 style={{ marginLeft:'10px',fontSize:'16px',fontWeight:'320' }}>{it.text}</h5>
                   <img src={it.img} height='200px' width='200px'/>
                   <p style={{ marginLeft:'20px',color:'red',fontSize:'20px' }}>{it.price} PKR</p>
                   <p style={{ marginLeft:'10px',color:'grey' }}>Incl. VAT : <strong>400 Rs</strong></p>
