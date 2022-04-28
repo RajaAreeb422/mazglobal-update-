@@ -3,7 +3,7 @@ import styled from "styled-components";
 import Carousel from "../../../components/Carosel";
 import Navbar2 from "../../../components/Navbar2";
 import Footer from "../../../components/footer/Footer";
-import { ArrowLeftOutlined, ArrowRightOutlined } from "@material-ui/icons";
+import { ArrowLeftOutlined, ArrowRightOutlined ,Category,LocationCity} from "@material-ui/icons";
 import { useEffect, useState } from "react";
 //import { useParams } from "react-router-dom";
 //import axios from "axios";
@@ -38,7 +38,7 @@ const ProductDesp = () => {
   const toggle = () => setModal(!modal);
   const [slideIndex, setSlideIndex] = useState(0);
   const [path, setPath] = useState([
-    "https://www.ks-international.com/media/catalog/product/cache/d3609febb2c99e7862c5859e894847cb/0/7/0704176-web_1.webp",
+    "https://www.chanceparts.com/Uploads/pro/Wabco-Button-valve-4630220200.464.3-1.jpg",
     "https://www.ks-international.com/media/catalog/product/cache/d3609febb2c99e7862c5859e894847cb/0/7/0704176-web_1.webp",
   ]);
 
@@ -193,12 +193,12 @@ const ProductDesp = () => {
   ];
   
   const rows = [
-    { name: 'Product Name', descp: 'suzu D-Max TFS77 3.0TD 4JH1 (07/2003-08/2006) RETAINER - REAR AXLE' },
+    { name: 'Product Name', descp: 'Wabco Button valve 4630220200' },
   
     { name: 'Chane No', descp: '0704176-1' },
     { name: 'OEM No', descp: '8980093410' },
     { name: 'Cross Ref', descp: '' },
-    { name: 'Apllication', descp: ' European truck' },
+    { name: 'Apllication', descp: ' Application:DAF, Scania, Volvo,Mack, Meritor, Kenworth, Liebherr, Paccar, Peterbilt' },
    
     { name: 'Package', descp: '1.PP bag+individual box+outer carton +pallet.' },
 
@@ -209,7 +209,7 @@ const ProductDesp = () => {
     <Navbar/>
     <img src='https://www.chanceparts.com/Uploads/info/60ccb07493e7c.jpg' width='100%'/>
     <Container>
-      
+{/*       
       <Wrapper>
         <Boxx>
           <Arrow direction="left" onClick={() => handleClick("left")}>
@@ -242,7 +242,7 @@ const ProductDesp = () => {
               <p>Collection :</p>
               <p style={{ color: "skyblue" }}>HEM</p>
             </div> */}
-            <Ndiv>
+            {/* <Ndiv>
             <P>Order By 2PM (Mon - Fri) For Same Day Dispatch</P>
             </Ndiv>
             
@@ -271,24 +271,13 @@ const ProductDesp = () => {
           <h2 style={{fontStyle:'italic',marginTop:'10px' ,marginLeft:'4px',color:'yellow'}}>400 RS</h2>
           </div>
           <AmountContainer>
-              {/* onClick={() => handleCount(setCount(count - 1))} */}
+              {/* onClick={() => handleCount(setCount(count - 1))} 
               <p style={{ fontWeight: "600",fontSize:'20px',marginLeft:'20px',color:'yellow' }}>PKR. 20,000</p>
               <span><button className={css.minus_btn} onClick={decCount}>-</button></span>
               <span><p className={css.counter} style={{color:'white'}}>{count}</p></span>
               <span><button className={css.add_btn} onClick={incrementCount}>+</button></span>
               
               
-              {/* <AmountBtn>
-                {" "}
-                <Remove />
-              </AmountBtn>
-              <Amount>
-                {55}
-              </Amount>
-              <AmountBtn>
-                {" "}
-                <Add />
-              </AmountBtn> */}
             </AmountContainer>
      
 
@@ -302,7 +291,171 @@ const ProductDesp = () => {
 
         
 
-      </Wrapper>
+      </Wrapper>  */}
+      <div style={{ display: "flex", flexDirection: "column" }}>
+          <LeftBar>
+            <Filter>
+              <Bar>
+                <div
+                  style={{
+                    backgroundColor: "rgba(16, 103, 138, 0.933)",
+                    width: "50px",
+                    height: "50px",
+                  }}
+                >
+                  <Category style={{ color: "white", marginTop: "8px" }} />
+                </div>
+                <FilterTitle>PRODUCT CATEGORIES</FilterTitle>
+              </Bar>
+              <hr width="245px" style={{ marginTop: "-2px" }} />
+              <FilterText>{">"} Air Brake System</FilterText>
+
+              <FilterText>{">"} Clutch System</FilterText>
+
+              <FilterText>{">"} Suspension</FilterText>
+
+              <FilterText>{">"} Body Parts</FilterText>
+              <FilterText>{">"} Engine</FilterText>
+
+              <FilterText>{">"} Brake</FilterText>
+
+              <FilterText>{">"} Clutch & FlyWheel</FilterText>
+              <FilterText>{">"} Engine</FilterText>
+              <FilterText>{">"} Axle & Trailer parts</FilterText>
+              <FilterText>{">"} Steering</FilterText>
+              <FilterText>{">"} Transmission</FilterText>
+              <hr width="200px" />
+            </Filter>
+          </LeftBar>
+
+          <SearchBar>
+            <Filter>
+              <Bar>
+                <div
+                  style={{
+                    backgroundColor: "rgba(16, 103, 138, 0.933)",
+                    width: "50px",
+                    height: "50px",
+                  }}
+                >
+                  <Category style={{ color: "white", marginTop: "8px" }} />
+                </div>
+                <FilterTitle>SEARCH</FilterTitle>
+              </Bar>
+              <hr width="245px" style={{ marginTop: "-2px" }} />
+              <FilterText>Product Search</FilterText>
+              <input
+                type="text"
+                className="form-control"
+                placeholder="Enter OEM no, Chance no etc"
+                style={{
+                  borderRadius: "8px",
+                  background: "whitesmoke",
+                  width: "220px",
+                  height: "40px",
+                  padding: "8px",
+                  marginLeft: "10px",
+                  marginTop: "10px",
+                }}
+              />
+              <FilterText>Product Categories</FilterText>
+              <select
+                className="form-control"
+                style={{
+                  borderRadius: "8px",
+                  background: "whitesmoke",
+                  width: "220px",
+                  height: "40px",
+                  padding: "8px",
+                  marginLeft: "10px",
+                  marginTop: "10px",
+                }}
+              >
+                <option>Air Brake System</option>
+                <option>Suspension</option>
+                <option>Body parts</option>
+                <option>Engine</option>
+              </select>
+
+              <FilterText>Vehicle</FilterText>
+              <select
+                className="form-control"
+                style={{
+                  borderRadius: "8px",
+                  background: "whitesmoke",
+                  width: "220px",
+                  height: "40px",
+                  padding: "8px",
+                  marginLeft: "10px",
+                  marginTop: "10px",
+                }}
+              >
+                <option>BMW</option>
+                <option>Toyota</option>
+                <option>Honda</option>
+                <option>MG</option>
+              </select>
+              <button
+                style={{
+                  marginBottom: "10px",
+                  height: "40px",
+                  width: "100px",
+                  marginLeft: "10px",
+                  marginRight: "auto",
+                  marginTop: "20px",
+                  backgroundColor: "rgba(16, 103, 138, 0.933)",
+                  color: "white",
+                }}
+              >
+                Search
+              </button>
+            </Filter>
+          </SearchBar>
+        </div>
+
+      <ProductShow>
+       <ImgDescp>
+       <Image  src={path[0]}  width='250px' height='400px' />
+       {/* <ImgWrapper slideIndex={slideIndex}>
+            {path.map((pa, i) => (
+              <Slide bg={item.id} >
+                <ImgContainer>
+                  
+                </ImgContainer>
+              </Slide>
+            ))} 
+          </ImgWrapper> */}
+          <Desc>
+            
+              
+          <p style={{fontSize:'22px',fontWeight:'200',marginTop:'-10px'}}>Wabco Button valve 4630220200</p>
+            
+          <div style={{display:'flex',flexDirection:'row',marginTop:'-10px'}}>
+          <h5 style={{fontWeight:'500',fontSize:'14px'}}>Part Code :</h5> 
+          <p style={{marginTop:'24px',marginLeft:'4px',fontWeight:'500',fontSize:'14px'}} >  0704176-1</p> 
+          </div>
+          <div style={{display:'flex',flexDirection:'row',fontWeight:'200',marginTop:'-10px'}}>
+          <h5 style={{fontWeight:'200',fontSize:'12px'}}>OEM Part Number:</h5> 
+          <p style={{marginTop:'20px',marginLeft:'4px',fontWeight:'200',fontSize:'12px'}}>   8980093410  </p>
+          </div>
+
+          <div style={{display:'flex',flexDirection:'row',fontWeight:'200',marginTop:'-10px'}}>
+          <h5 style={{fontWeight:'200',fontSize:'12px'}}>Application:</h5> 
+          <p style={{marginTop:'20px',marginLeft:'4px',fontWeight:'200',width:'300px',fontSize:'12px'}}>  Application:DAF, Scania, Volvo,Mack, Meritor, Kenworth, Liebherr, Paccar, Peterbilt </p>
+          </div>
+          {/* <div style={{display:'flex',flexDirection:'row',fontWeight:'200'}}>
+          <LocationCity/>
+          <p style={{marginTop:'20px',marginLeft:'4px',color:'black',fontWeight:'200'}}> 642909  , 1934912  , 268759  , 8235-S4630220200 </p>
+          </div> */}
+
+          
+          </Desc>          
+
+
+       </ImgDescp>
+     
+
+
       <MainDiv>
          <div style={{background:'rgba(16, 103, 138, 0.933)' ,padding:'1px',width:'160px'}}>
           <h5 style={{color:'white',textAlign:'center'}}>DESCRIPTION</h5>
@@ -317,11 +470,26 @@ const ProductDesp = () => {
          </SmallDiv> 
 
         </MainDiv>
-      
+        <MainDiv>
+         <div style={{background:'rgba(16, 103, 138, 0.933)' ,padding:'1px',width:'160px'}}>
+          <h5 style={{color:'white',textAlign:'center'}}>INQUIRY US</h5>
+         </div> 
+         <hr width='850px'  style={{color:'rgba(16, 103, 138, 0.933)',height:'2px',marginTop:'-2px'}}/>
+         <form style={{display:'flex',flexDirection:'column',padding:'30px'}}>
+         <Input type='text' placeholder="Name" className="form-control"></Input>
+         <Input type='email' placeholder="Email" className="form-control"></Input>
+         <Input type='text' placeholder=" Product Name" className="form-control"></Input>
+         <textarea placeholder="Message" style={{background:'whitesmoke',borderRadius:'8px',marginBottom:'20px'}}></textarea>
+         <button type='submit' style={{color:'white',width:'200px',borderRadius:'8px',height:'6vh',background:'rgba(16, 103, 138, 0.933)'}}>
+            Submit</button>
+         </form>
+         </MainDiv>
+        </ProductShow>
 
-      <Related/>
-      <Footer /> 
+      
     </Container>
+    <Related/>
+      <Footer /> 
     </>
     
   );
@@ -329,11 +497,138 @@ const ProductDesp = () => {
 
 export default ProductDesp;
 
+
+const Input= styled.input`
+  height:50px;
+  padding:6px;
+  margin-bottom:20px;
+  border-radius:8px;
+  background:whitesmoke;
+  border:1px ridge whitesmoke;
+`;
+const ProductShow = styled.div`
+  display: flex;
+  flex-direction:column;
+  margin-left:40px;
+  margin-top:55px;
+`;
+
+const ImgDescp = styled.div`
+  display: flex;
+  flex-direction:row;
+  padding:8px;
+  border:1px solid whitesmoke;
+  margin-bottom:40px;
+`;
+
+const Bar = styled.div`
+  display: flex;
+  width: 245px;
+  flex-direction: row;
+  background-color: whitesmoke;
+  //border-style:groove;
+  border-bottom-color: whitesmoke;
+  text-align: center;
+`;
+
+const FilterContainer = styled.div`
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+`;
+const GridArea = styled.div`
+  display: flex;
+  flex-direction: row;
+`;
+
+const Filter = styled.div`
+  //margin: 20px;
+  display: flex;
+  flex-direction: column;
+
+  //height:40px;
+  // background-color:white;
+`;
+
+const FilterHome = styled.div`
+  //margin: 20px;
+  display: flex;
+  flex-direction: row;
+  margin-left: 30px;
+  //height:40px;
+`;
+const Images = styled.div`
+  //margin: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: center;
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  //height:40px;
+`;
+const LeftBar = styled.div`
+  margin-left: 30px;
+  margin-top: 55px;
+  width: 250px;
+
+  border-color: whitesmoke;
+  border-style: ridge;
+  // border-style:groove;
+  box-shadow: 0 2px 2px rgb(11 25 28 / 10%);
+`;
+
+const SearchBar = styled.div`
+  margin-left: 30px;
+  margin-top: 55px;
+  width: 250px;
+  margin-bottom: 40px;
+  border-color: whitesmoke;
+  border-style: ridge;
+  // border-style:groove;
+  box-shadow: 0 2px 2px rgb(11 25 28 / 10%);
+`;
+
+const Right = styled.div`
+  margin-left: 30px;
+`;
+
+const FilterText = styled.span`
+  font-size: 16px;
+  padding: 8px;
+  font-weight:300;
+  font-family:Montserrat;
+  margin-left: 10px;
+`;
+const FilterHomeText = styled.span`
+  font-size: 14px;
+  padding: 6px;
+  /* padding:20px;
+  margin-top: 10px;
+  margin-left:20px */
+`;
+const SortText = styled.span`
+  font-size: 14px;
+`;
+const FilterTitle = styled.span`
+  font-size: 16px;
+  font-weight: 500;
+  padding: 9px;
+  font-family:Helvatica;
+  background-color: whitesmoke;
+`;
+
+
+
+
+
 const MainDiv = styled.div`
-  border:1px groove whitesmoke;
+  border:2px ridge whitesmoke;
   width:860px;
   margin-left:auto;
   margin-right:auto;
+  margin-top:50px;
 `;
 const SmallDiv = styled.div`
   
@@ -386,20 +681,7 @@ const Rate = styled.div`
   font-family: Times New Roman;
 `;
 
-const FilterContainer = styled.div`
-  max-width: 40%;
-  margin: 20px 0px;
-  display: flex;
-  justify-content: space-between;
-`;
-const Filter = styled.div`
-  max-width: 50%;
-  min-width: 50%;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-`;
 
 const FilterSize = styled.span`
   display: flex;
@@ -411,7 +693,12 @@ const FilterSizeOpt = styled.span`
   padding-left: 20px;
 `;
 const Container = styled.div`
-
+    display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  
+  margin-left:180px;
+  margin-right: auto;
 `;
 
 const Wrapper = styled.div`
@@ -467,9 +754,7 @@ const Title = styled.h1`
 `;
 
 const Desc = styled.p`
-  margin: 20px 0px;
-  color:white;
-  padding-left: 20px;
+  padding:8px;
 `;
 
 const Price = styled.span`

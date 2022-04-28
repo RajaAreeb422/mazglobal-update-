@@ -230,18 +230,33 @@ text-decoration: none;
  .mission{
     display:flex;
     flex-direction: row;
-    background-color: rgba(16, 103, 138, 0.933);
+    background-color: rgba(67, 143, 173, 0.933);
+    
     padding: 20px;
-    width:90%;
+    width:100%;
     margin-left: auto;
     margin-right: auto;
     height:60vh;
     box-shadow: 0 10px 15px -3px rgba(46, 41, 51, 0.08),
     0 4px 6px -2px rgba(71, 63, 79, 0.16);
     border-style:groove;
-    
-    
+   
  }
+
+ .about{
+   display:flex;
+   flex-direction: row;
+   background-color: rgba(67, 143, 173, 0.933);
+  
+   width:100%;
+   margin-left: auto;
+   margin-right: auto;
+   height:50vh;
+   box-shadow: 0 10px 15px -3px rgba(46, 41, 51, 0.08),
+   0 4px 6px -2px rgba(71, 63, 79, 0.16);
+   
+  
+}
  .stick{
     
     

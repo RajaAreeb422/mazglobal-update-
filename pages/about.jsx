@@ -6,7 +6,7 @@ import Footer from "../components/footer/Footer";
 import { useEffect, useState } from "react";
 //import ProductItem from "../../../components/ProductItem";
 import SingleProduct from "../components/SingleProduct";
-import { HomeOutlined,Category } from "@material-ui/icons";
+import { HomeOutlined, Category } from "@material-ui/icons";
 import Navbar from "../components/Navbar";
 //import axios from "axios";
 //import Pagination from '@material-ui/lab/Pagination';
@@ -88,7 +88,6 @@ const About = () => {
       sku: "0700185",
       price: 4000,
     },
-    
   ]);
   useEffect(() => {
     // const config = {
@@ -145,9 +144,12 @@ const About = () => {
   }
   return (
     <>
-      <Navbar2/>
-      <Navbar/>
-      <img src='https://www.chanceparts.com/Uploads/info/60ccb07493e7c.jpg' width='100%'/>
+      <Navbar2 />
+      <Navbar />
+      <img
+        src="https://www.chanceparts.com/Uploads/info/60ccb07493e7c.jpg"
+        width="100%"
+      />
       <Container>
         {/* <FilterContainer>
           <FilterHome>
@@ -160,57 +162,38 @@ const About = () => {
           </FilterHome>
         </FilterContainer> */}
 
-        
-<div style={{display:'flex',flexDirection:'column'}}>
+        <div style={{ display: "flex", flexDirection: "column" }}>
           <LeftBar>
             <Filter>
               <Bar>
-                <div style={{backgroundColor:'rgba(16, 103, 138, 0.933)',width:'50px',height:'50px'}}>
-                <Category style={{color:'white',marginTop:'8px'}} />
+                <div
+                  style={{
+                    backgroundColor: "rgba(16, 103, 138, 0.933)",
+                    width: "50px",
+                    height: "50px",
+                  }}
+                >
+                  <Category style={{ color: "white", marginTop: "8px" }} />
                 </div>
-              <FilterTitle >
-                PRODUCT CATEGORIES
-              </FilterTitle>
+                <FilterTitle>PRODUCT CATEGORIES</FilterTitle>
               </Bar>
-              <hr width="245px" style={{marginTop:'-2px'}} />
-              <FilterText >
-              {'>'}  Air Brake System
-              </FilterText>
-              
-              <FilterText >
-              {'>'} Clutch System
-              </FilterText>
-              
-              <FilterText >
-              {'>'} Suspension
-              </FilterText>
-              
-              <FilterText >
-              {'>'} Body Parts
-              </FilterText>
-              <FilterText >
-              {'>'} Engine
-              </FilterText>
-              
-              <FilterText>
-              {'>'}  Brake
-              </FilterText>
-             
-              <FilterText >
-              {'>'} Clutch & FlyWheel
-              </FilterText>
-              <FilterText >
-              {'>'} Engine
-              </FilterText>
-              <FilterText >
-              {'>'} Axle & Trailer parts
-              </FilterText>
-              <FilterText >
-              {'>'} Steering
-              </FilterText>
-              <FilterText >
-              {'>'} Transmission
-              </FilterText>
+              <hr width="245px" style={{ marginTop: "-2px" }} />
+              <FilterText>{">"} Air Brake System</FilterText>
+
+              <FilterText>{">"} Clutch System</FilterText>
+
+              <FilterText>{">"} Suspension</FilterText>
+
+              <FilterText>{">"} Body Parts</FilterText>
+              <FilterText>{">"} Engine</FilterText>
+
+              <FilterText>{">"} Brake</FilterText>
+
+              <FilterText>{">"} Clutch & FlyWheel</FilterText>
+              <FilterText>{">"} Engine</FilterText>
+              <FilterText>{">"} Axle & Trailer parts</FilterText>
+              <FilterText>{">"} Steering</FilterText>
+              <FilterText>{">"} Transmission</FilterText>
               <hr width="200px" />
             </Filter>
           </LeftBar>
@@ -218,122 +201,165 @@ const About = () => {
           <SearchBar>
             <Filter>
               <Bar>
-                <div style={{backgroundColor:'rgba(16, 103, 138, 0.933)',width:'50px',height:'50px'}}>
-                <Category style={{color:'white',marginTop:'8px'}} />
+                <div
+                  style={{
+                    backgroundColor: "rgba(16, 103, 138, 0.933)",
+                    width: "50px",
+                    height: "50px",
+                  }}
+                >
+                  <Category style={{ color: "white", marginTop: "8px" }} />
                 </div>
-              <FilterTitle >
-                SEARCH
-              </FilterTitle>
+                <FilterTitle>SEARCH</FilterTitle>
               </Bar>
-              <hr width="245px" style={{marginTop:'-2px'}} />
-              <FilterText >
-              Product Search
-              </FilterText>
-              <input type='text' className="form-control" placeholder="Enter OEM no, Chance no etc"
-              style={{borderRadius:'8px',background:'whitesmoke',width:'220px',height:'40px',padding:'8px',marginLeft:'10px',marginTop:'10px'}}
+              <hr width="245px" style={{ marginTop: "-2px" }} />
+              <FilterText>Product Search</FilterText>
+              <input
+                type="text"
+                className="form-control"
+                placeholder="Enter OEM no, Chance no etc"
+                style={{
+                  borderRadius: "8px",
+                  background: "whitesmoke",
+                  width: "220px",
+                  height: "40px",
+                  padding: "8px",
+                  marginLeft: "10px",
+                  marginTop: "10px",
+                }}
               />
-              <FilterText >
-              Product Categories
-              </FilterText>
-              <select className="form-control"
-               style={{borderRadius:'8px',background:'whitesmoke',width:'220px',height:'40px',padding:'8px',marginLeft:'10px', marginTop:'10px'}}
-  
+              <FilterText>Product Categories</FilterText>
+              <select
+                className="form-control"
+                style={{
+                  borderRadius: "8px",
+                  background: "whitesmoke",
+                  width: "220px",
+                  height: "40px",
+                  padding: "8px",
+                  marginLeft: "10px",
+                  marginTop: "10px",
+                }}
               >
-                 <option>Air Brake System</option> 
-                 <option>Suspension</option> 
-                 <option>Body parts</option> 
-                 <option>Engine</option> 
+                <option>Air Brake System</option>
+                <option>Suspension</option>
+                <option>Body parts</option>
+                <option>Engine</option>
               </select>
-              
 
-              <FilterText >
-              Vehicle
-              </FilterText>
-              <select className="form-control"
-               style={{borderRadius:'8px',background:'whitesmoke',width:'220px',height:'40px',padding:'8px',marginLeft:'10px', marginTop:'10px'}}
-  
+              <FilterText>Vehicle</FilterText>
+              <select
+                className="form-control"
+                style={{
+                  borderRadius: "8px",
+                  background: "whitesmoke",
+                  width: "220px",
+                  height: "40px",
+                  padding: "8px",
+                  marginLeft: "10px",
+                  marginTop: "10px",
+                }}
               >
-                 <option>BMW</option> 
-                 <option>Toyota</option> 
-                 <option>Honda</option> 
-                 <option>MG</option> 
+                <option>BMW</option>
+                <option>Toyota</option>
+                <option>Honda</option>
+                <option>MG</option>
               </select>
-              <button style={{marginBottom:'10px',height:'40px',width:'100px',marginLeft:'10px',marginRight:'auto',marginTop:'20px',backgroundColor:'rgba(16, 103, 138, 0.933)',color:'white'}}>Search</button>
-              
+              <button
+                style={{
+                  marginBottom: "10px",
+                  height: "40px",
+                  width: "100px",
+                  marginLeft: "10px",
+                  marginRight: "auto",
+                  marginTop: "20px",
+                  backgroundColor: "rgba(16, 103, 138, 0.933)",
+                  color: "white",
+                }}
+              >
+                Search
+              </button>
             </Filter>
           </SearchBar>
-          </div>
-  
-        
+        </div>
 
-        <div style={{ margin:'60px'}}>
+        <div style={{ margin: "55px" }}>
           <Productshow>
-            <h2>About Us</h2>
+            <h2 style={{fontFamily:'Helvatica'}}>About Us</h2>
             <P>
-                
-MAZ Global is a team of people working in truck spare parts more than 15 years.  With the development truck parts industry and technology in the last decade in China, we are also growing up with them. We save a wide and close purchase sources after years of cooperation with many truck parts manufacturers.We continuously strive to source new products of high quality and extremely competitive prices to satisfy our wide range of customers throughout all around the world.
+              MAZ Global is a team of people working in truck spare parts more
+              than 15 years. With the development truck parts industry and
+              technology in the last decade in China, we are also growing up
+              with them. We save a wide and close purchase sources after years
+              of cooperation with many truck parts manufacturers.We continuously
+              strive to source new products of high quality and extremely
+              competitive prices to satisfy our wide range of customers
+              throughout all around the world.
             </P>
             <P>
-We always find that middle and small foreign importers are hard to get high quality spare parts with 
-competitive prices from different manufacturers and coordinate to make shipment smoothly.</P>
-          <P>
-          Here at MAZ Global, we look to our suppliers as partners. Important partners that we count on to protect our performance and the steadfast quality MAZ Global is known for. This is why we work hard to provide you with the parts and services to improve your knowledge, more efficiently support your activities and foster a close and productive relationship with MAZ Global.
-          </P>
-          <P>
-          Our target is to be more professional and efficient purchasing company for more worldwide customers, with our good idea about truck parts from China and our One-stop services .  
-          </P>
+              We always find that middle and small foreign importers are hard to
+              get high quality spare parts with competitive prices from
+              different manufacturers and coordinate to make shipment smoothly.
+            </P>
+            <P>
+              Here at MAZ Global, we look to our suppliers as partners.
+              Important partners that we count on to protect our performance and
+              the steadfast quality MAZ Global is known for. This is why we work
+              hard to provide you with the parts and services to improve your
+              knowledge, more efficiently support your activities and foster a
+              close and productive relationship with MAZ Global.
+            </P>
+            <P>
+              Our target is to be more professional and efficient purchasing
+              company for more worldwide customers, with our good idea about
+              truck parts from China and our One-stop services .
+            </P>
 
-          <P>Highlighed Products:</P>
-          <ul style={{ fontWeight:'320'}}>
-           <li> Air Brake Systems</li> 
-           <li> Clutch</li> 
-           <li> Wheel Brake</li> 
-           <li> Power Steering Pump</li> 
-           <li> Suspension</li>   
-          </ul>
+            <P>Highlighed Products:</P>
+            <ul style={{ fontWeight: "320",fontFamily:'Montserrat' }}>
+              <li> Air Brake Systems</li>
+              <li> Clutch</li>
+              <li> Wheel Brake</li>
+              <li> Power Steering Pump</li>
+              <li> Suspension</li>
+            </ul>
 
-          <P>Main Services</P>
+            <P>Main Services</P>
 
-          <ul style={{ fontWeight:'320'}}>
-           <li> Products Sourcing</li> 
-           <li>Factory Inspection</li> 
-           <li> Shipment Insepection</li> 
-           <li>  Combined Shipment Coordination</li> 
-             
-          </ul>
+            <ul style={{ fontWeight: "320",fontFamily:'Montserrat' }}>
+              <li> Products Sourcing</li>
+              <li>Factory Inspection</li>
+              <li> Shipment Insepection</li>
+              <li> Combined Shipment Coordination</li>
+            </ul>
           </Productshow>
         </div>
-        
-            
-
-
       </Container>
-      <Footer/>
+      <Footer />
     </>
   );
 };
 
 export default About;
 
-
 const Title = styled.h1`
   margin: 20px;
   text-align: center;
 `;
 
-const P= styled.p`
-  font-weight:320;
+const P = styled.p`
+  
+  font-family:Montserrat;
 `;
 const Bar = styled.div`
-   display:flex;
-   width:245px;
-   flex-direction:row;
-   background-color:whitesmoke;
-   //border-style:groove;
-   border-bottom-color:whitesmoke;
+  display: flex;
+  width: 245px;
+  flex-direction: row;
+  background-color: whitesmoke;
+  //border-style:groove;
+  border-bottom-color: whitesmoke;
   text-align: center;
 `;
-
 
 const FilterContainer = styled.div`
   margin-top: 20px;
@@ -349,7 +375,6 @@ const Filter = styled.div`
   //margin: 20px;
   display: flex;
   flex-direction: column;
-  
 
   //height:40px;
   // background-color:white;
@@ -377,9 +402,9 @@ const LeftBar = styled.div`
   margin-left: 30px;
   margin-top: 55px;
   width: 250px;
- 
+
   border-color: whitesmoke;
-  border-style: groove;
+  border-style: ridge;
   // border-style:groove;
   box-shadow: 0 2px 2px rgb(11 25 28 / 10%);
 `;
@@ -388,22 +413,22 @@ const SearchBar = styled.div`
   margin-left: 30px;
   margin-top: 55px;
   width: 250px;
-  margin-bottom:40px;
+  margin-bottom: 40px;
   border-color: whitesmoke;
-  border-style: groove;
+  border-style: ridge;
   // border-style:groove;
   box-shadow: 0 2px 2px rgb(11 25 28 / 10%);
 `;
-
 
 const Right = styled.div`
   margin-left: 30px;
 `;
 
 const FilterText = styled.span`
- font-size: 14px;
+  font-size: 16px;
   padding: 8px;
-  
+  font-weight:300;
+  font-family:Montserrat;
   margin-left: 10px;
 `;
 const FilterHomeText = styled.span`
@@ -417,9 +442,10 @@ const SortText = styled.span`
   font-size: 14px;
 `;
 const FilterTitle = styled.span`
-   font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
-  padding: 4px;
+  padding: 9px;
+  font-family:Helvatica;
   background-color: whitesmoke;
 `;
 
@@ -431,25 +457,24 @@ const Option = styled.option``;
 
 const Productshow = styled.div`
   padding: 20px;
-  width:700px;
-  margin-top:0px;
+  width: 700px;
+  margin-top: 0px;
   box-shadow: 0 10px 15px -3px rgba(46, 41, 51, 0.08),
     0 4px 6px -2px rgba(71, 63, 79, 0.16);
-    border-style:groove;
-    border-color:whitesmoke;
+  border-style: groove;
+  border-color: whitesmoke;
   display: flex;
-  border:1px solid grey;
+  border: 1px ridge whitesmoke;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-between;
 `;
 
 const Container = styled.div`
-display:flex;
-flex-direction:row;
+  display: flex;
+  flex-direction: row;
 
   width: 1100px;
   margin-left: auto;
   margin-right: auto;
 `;
-

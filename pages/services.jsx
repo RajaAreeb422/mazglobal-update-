@@ -255,14 +255,14 @@ const Services = () => {
           </div>
         
 
-        <div style={{ margin:'60px'}}>
+        <div style={{ margin:'55px'}}>
           <Productshow>
-            <P style={{fontWeight:'400',fontSize:'24px'}}>Services</P>
+            <H >Services</H>
             
 
           <P>MAIN SERVICES WE CAN PROVIDE</P>
 
-          <ul style={{ fontWeight:'320'}}>
+          <ul style={{ fontWeight:'320',fontFamily:'Montserrat'}}>
            <li> Product Sourcing</li> 
            <li>Factory Inspection</li> 
            <li> Shipment Inspection</li> 
@@ -270,7 +270,7 @@ const Services = () => {
              
           </ul>
 
-          <P style={{fontWeight:'320',fontSize:'24px'}}>WHAT IS OUR ADVANTAGE ?</P>
+          <H >WHAT IS OUR ADVANTAGE ?</H>
           <P style={{fontWeight:'300'}}>
           Before you work with us, you might have found several China manufacturers on the internet.
            However, you still think you have not got one because you can’t know which will be the right supplier for you.   
@@ -299,9 +299,14 @@ const Title = styled.h1`
   text-align: center;
 `;
 
+const H= styled.p`
+  font-weight:400;
+  font-family:Helvatica;
+  font-size:24px;
+`;
 const P= styled.p`
-  font-weight:200;
-  
+  font-weight:300;
+  font-family:Montserrat;
   font-size:16px;
 `;
 const Bar = styled.div`
@@ -357,9 +362,9 @@ const LeftBar = styled.div`
   margin-left: 30px;
   margin-top: 55px;
   width: 250px;
-  
+
   border-color: whitesmoke;
-  border-style: groove;
+  border-style: ridge;
   // border-style:groove;
   box-shadow: 0 2px 2px rgb(11 25 28 / 10%);
 `;
@@ -368,20 +373,22 @@ const SearchBar = styled.div`
   margin-left: 30px;
   margin-top: 55px;
   width: 250px;
-  margin-bottom:40px;
+  margin-bottom: 40px;
   border-color: whitesmoke;
-  border-style: groove;
+  border-style: ridge;
   // border-style:groove;
   box-shadow: 0 2px 2px rgb(11 25 28 / 10%);
 `;
+
 const Right = styled.div`
   margin-left: 30px;
 `;
 
 const FilterText = styled.span`
-  font-size: 14px;
+  font-size: 16px;
   padding: 8px;
-  
+  font-weight:300;
+  font-family:Montserrat;
   margin-left: 10px;
 `;
 const FilterHomeText = styled.span`
@@ -395,9 +402,10 @@ const SortText = styled.span`
   font-size: 14px;
 `;
 const FilterTitle = styled.span`
- font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
-  padding: 4px;
+  padding: 9px;
+  font-family:Helvatica;
   background-color: whitesmoke;
 `;
 
@@ -413,7 +421,7 @@ const Productshow = styled.div`
   margin-top:0px;
   box-shadow: 0 10px 15px -3px rgba(46, 41, 51, 0.08),
     0 4px 6px -2px rgba(71, 63, 79, 0.16);
-    border-style:groove;
+    border:2px ridge whitesmoke;
     border-color:whitesmoke;
   display: flex;
   

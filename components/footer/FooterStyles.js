@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Box = styled.div`
-padding: 20px 0px;
+padding: 10px 0px;
 background: whitesmoke;
 bottom: 0;
 width: 100%;
@@ -58,5 +58,6 @@ export const Heading = styled.p`
 color: rgba(16, 103, 138, 0.933);
 text-decoration: none;
 margin-left:40px;
+font-weight:700;
 font-size:18px;
 `;

@@ -255,13 +255,14 @@ const Images = styled.div`
   margin-right: auto;
   //height:40px;
 `;
+
 const LeftBar = styled.div`
   margin-left: 30px;
   margin-top: 55px;
   width: 250px;
-  
+
   border-color: whitesmoke;
-  border-style: groove;
+  border-style: ridge;
   // border-style:groove;
   box-shadow: 0 2px 2px rgb(11 25 28 / 10%);
 `;
@@ -270,21 +271,22 @@ const SearchBar = styled.div`
   margin-left: 30px;
   margin-top: 55px;
   width: 250px;
-  margin-bottom:40px;
+  margin-bottom: 40px;
   border-color: whitesmoke;
-  border-style: groove;
+  border-style: ridge;
   // border-style:groove;
   box-shadow: 0 2px 2px rgb(11 25 28 / 10%);
 `;
+
 const Right = styled.div`
   margin-left: 30px;
 `;
 
 const FilterText = styled.span`
   font-size: 16px;
-  font-weight:350;
   padding: 8px;
-  
+  font-weight:300;
+  font-family:Montserrat;
   margin-left: 10px;
 `;
 const FilterHomeText = styled.span`
@@ -298,12 +300,12 @@ const SortText = styled.span`
   font-size: 14px;
 `;
 const FilterTitle = styled.span`
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
-  padding: 4px;
+  padding: 9px;
+  font-family:Helvatica;
   background-color: whitesmoke;
 `;
-
 const Select = styled.select`
   padding: 10px;
   margin-right: 20px;

@@ -37,7 +37,7 @@ return (
 		</Column>	
 	
 		<Column>
-			<Heading style={{marginLeft:'0px',fontWeight:'500'}}>Send Feedback</Heading>
+			<Heading style={{marginLeft:'0px'}}>Feedback</Heading>
 			<Input type='text' placeholder="Name"></Input>
 			<Input type='email' placeholder="Email"></Input>
 			<Textarea placeholder="Message"></Textarea>
@@ -50,13 +50,14 @@ return (
 			<FooterLink href="#">Indore</FooterLink>
 			<FooterLink href="#">Mumbai</FooterLink> */}
 
-			<Heading style={{fontWeight:'500'}}>Contact Us</Heading>
-			<FootLink href="#"><WhatsApp/>    +090078601</FootLink>
-			<FootLink href="#"><Email/>        customercare@pernia.pk</FootLink>
+			<Heading >Contact Us</Heading>
+			<FootLink href="#"><WhatsApp/>  <P>+44 (0)20 86542 7567</P></FootLink>
+			<FootLink href="#"><Phone/>    <P>+44 (0)20 86542 7567</P></FootLink>
+			<FootLink href="#"><Email/>     <P>customercare@mazglobal.pk</P> </FootLink>
+			<FootLink ><LocationCity  /> <P>Bahria Town Phase |||</P></FootLink>
 			
-			<Heading style={{marginTop:'20px',fontWeight:'500'}}>Customer Services</Heading>
-			<FootLink  ><Link href='/SellAt' as={`/SellAt`}><PP>Terms and Conditions</PP></Link></FootLink>
-			<FootLink><Link href='/Connect_With_Us' as={`/Connect_With_Us`} ><PP>Connect with us</PP></Link></FootLink>
+			<FootLink ><p style={{color:'rgba(16, 103, 138, 0.933)',fontSize:'14px',marginTop:'0px',marginLeft:'30px'}}>Street 1963</p></FootLink>
+			
 		</Column>
 		{/* <Column>
 			<Heading>Social Media</Heading>
@@ -75,12 +76,9 @@ return (
 <Column style={{marginTop:'0px', marginLeft:'20px'}}>
 			{/* <Heading>About Us</Heading> */}
 			
-			<FootLink ><Link href='/SellAt' as={`/SellAt`}><Phone style={{fontSize:'38px'}}/></Link></FootLink>
-			<FootLink ><p style={{color:'rgba(16, 103, 138, 0.933)',fontSize:'14px'}}>Phone us on</p></FootLink>
-			<FootLink > +44 (0)20 86542 7567</FootLink>
-			<FootLink > <Link href='/Rewards' as={`/Rewards`}><LocationCity style={{fontSize:'38px',marginTop:'20px'}}/></Link></FootLink>
-			<FootLink ><p style={{color:'rgba(16, 103, 138, 0.933)',fontSize:'14px'}}>Bahria Town Phase |||</p></FootLink>
-			<FootLink ><p style={{color:'rgba(16, 103, 138, 0.933)',fontSize:'14px',marginTop:'-6px'}}>Street 1963</p></FootLink>
+			<Heading >Quick Links</Heading>
+			<FootLink  ><Link href='/SellAt' as={`/SellAt`}><PP>Terms and Conditions</PP></Link></FootLink>
+			<FootLink><Link href='/Connect_With_Us' as={`/Connect_With_Us`} ><PP>Connect with us</PP></Link></FootLink>
 		</Column>
 		</Row>
 	</Container>
@@ -116,11 +114,20 @@ cursor:pointer;
 color:rgba(16, 103, 138, 0.933);
 margin-top:0px;
 `
-
+const P=styled.p` 
+text-decoration:none;
+cursor:pointer;
+color:rgba(16, 103, 138, 0.933);
+margin-top:3px;
+margin-left:8px ;
+`
 const FootLink=styled.div`
  text-decoration:none;
- padding-left:40px;
- margin-top:10px;
+ padding-left:40px !important;
+ padding:3px ;
+ display:flex;
+ flex-direction:row;
+ 
  color:rgba(16, 103, 138, 0.933);
 `
 const Input=styled.input`

@@ -1,7 +1,8 @@
 .Container{
-    width: 70%;
-    margin-left: auto;
-    margin-right: auto;
+    width: 80%;
+    margin-left: 13%;
+    margin-right: 10%;
+   
 
      }
 
@@ -16,13 +17,14 @@
      .h4{
         text-align: center;
         font-size:26px ;
+        font-family: Helvetica;
     }
 
     .imgDiv{
             display:'flex';
             flex-direction:'column';
             align-content:'space-between';
-            transition: transform .2s;
+            transition: transform .4s;
             
             border-left: 1px solid grey;
             height: 300px;
@@ -31,8 +33,7 @@
     }
     .imgDiv :hover{
         transition:scale(1.6);
-        transition-delay: 0.1s ease;
-        height:200px;
-        width:200px;
+        transition-delay: 0.3s ease;
+        width: 200px;
         box-shadow: 0 2px 2px rgb(11 25 28 / 10%);
     }

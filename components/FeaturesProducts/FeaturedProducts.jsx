@@ -17,19 +17,19 @@ const FeaturedProducts = () => {
   const [box, setBox] = useState([
     {
       id: 1,
-      text: "CV JOINT OUTER",
+      text: "CV Joint Outer",
       price:4000,
       img: "https://www.ks-international.com/media/catalog/product/cache/5cbd42b6a5a30dbac7552a8bcebb8809/0/7/0700480_1.webp",
     },
     {
       id: 2,
-      text: "FRONT BUMPER BLACK",
+      text: "Front Bumper Black",
       price:5000,
       img: "https://www.ks-international.com/media/catalog/product/cache/5cbd42b6a5a30dbac7552a8bcebb8809/0/7/0703479web.webp",
     },
     {
       id: 3,
-      text: "REAR BUMPER",
+      text: "Rear Bumper",
       price:6000,
       img: "https://www.ks-international.com/media/catalog/product/cache/5cbd42b6a5a30dbac7552a8bcebb8809/0/7/0701324_3.webp",
     },
@@ -49,7 +49,7 @@ const FeaturedProducts = () => {
       id: 6,
       text: "Web Co Air Processing",
       price:7000,
-      img:'https://www.chanceparts.com/Wabco-Hand-brake-valve-9617242040-9617242000-p.html'
+      img:'https://www.ks-international.com/media/catalog/product/cache/5cbd42b6a5a30dbac7552a8bcebb8809/0/7/0701324_3.webp'
     },
     {
       id: 7,
@@ -80,7 +80,7 @@ const FeaturedProducts = () => {
         
           <p className={ic.h4} style={{marginTop:'30px',marginBottom:'20px'}}>Featured Products</p>
 
-          <Carousel style={{ width: "360px", }} show={4} slide={1} swiping={true} leftArrow={<Deals_ItemLeft/>} rightArrow={<Deals_ItemRight/>}>
+          <Carousel style={{ width: "360px", }} show={5} slide={1} swiping={true} leftArrow={<Deals_ItemLeft/>} rightArrow={<Deals_ItemRight/>}>
               {box.map((it,key) => (
                 <Link key={key} href="/category/[id]" as={`/category/${it.id}`}>
                   <div className={ic.imgDiv}>

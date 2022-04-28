@@ -6,7 +6,7 @@ import Footer from "../components/footer/Footer";
 import { useEffect, useState } from "react";
 //import ProductItem from "../../../components/ProductItem";
 import SingleProduct from "../components/SingleProduct";
-import { HomeOutlined,Category } from "@material-ui/icons";
+import { HomeOutlined, Category } from "@material-ui/icons";
 import Navbar from "../components/Navbar";
 //import axios from "axios";
 //import Pagination from '@material-ui/lab/Pagination';
@@ -18,7 +18,7 @@ const AllProduct = () => {
   const [spro, setSizeProduct] = useState([
     {
       id: 1,
-      img: "https://www.ks-international.com/media/catalog/product/cache/5cbd42b6a5a30dbac7552a8bcebb8809/1/1/11979.webp",
+      img: "https://www.chanceparts.com/Uploads/pro/Wabco-Button-valve-4630220200.464.1.jpg",
       name: "REAR AXLE WHEEL BEARING KIT",
       tax: "36.00 RS",
       sku: "0700185",
@@ -26,62 +26,92 @@ const AllProduct = () => {
     },
     {
       id: 2,
-      img: "https://www.ks-international.com/media/catalog/product/cache/5cbd42b6a5a30dbac7552a8bcebb8809/0/0/0001420-web.webp",
-      name: "REAR AXLE WHEEL BEARING KIT",
+      img: "https://www.chanceparts.com/Uploads/pro/Air-hose-with-gun.95.1.jpg",
+      name: "Wabco Button valve 4630220200",
       tax: "36.00 RS",
       sku: "0700185",
       price: 4000,
     },
     {
       id: 3,
-      img: "https://www.ks-international.com/media/catalog/product/cache/5cbd42b6a5a30dbac7552a8bcebb8809/0/0/0001272_2.webp",
-      name: "REAR AXLE WHEEL BEARING KIT",
+      img: "https://www.chanceparts.com/Uploads/pro/Air-hose-with-gun.98.1.jpg",
+      name: "Air hose with gun black",
       tax: "36.00 RS",
       sku: "0700185",
       price: 4000,
     },
     {
       id: 4,
-      img: "https://www.ks-international.com/media/catalog/product/cache/5cbd42b6a5a30dbac7552a8bcebb8809/0/7/0700185_2.webp",
-      name: "REAR AXLE WHEEL BEARING KIT",
+      img: "https://www.chanceparts.com/Uploads/pro/Gland-hand-11441.247.1.jpg",
+      name: "Air hose with gun blue",
       tax: "36.00 RS",
       sku: "0700185",
       price: 4000,
     },
     {
       id: 5,
-      img: "https://www.ks-international.com/media/catalog/product/cache/5cbd42b6a5a30dbac7552a8bcebb8809/0/0/0011706-web.webp",
-      name: "REAR AXLE WHEEL BEARING KIT",
+      img: "https://www.chanceparts.com/Uploads/pro/Gland-hand-11440.246.1.jpg",
+      name: "Gland hand 11441",
       tax: "36.00 RS",
       sku: "0700185",
       price: 4000,
     },
     {
       id: 6,
-      img: "https://www.ks-international.com/media/catalog/product/cache/5cbd42b6a5a30dbac7552a8bcebb8809/0/0/0012367K.webp",
-      name: "REAR AXLE WHEEL BEARING KIT",
+      img: "https://www.chanceparts.com/Uploads/pro/Gland-hand-12308.245.1.jpg",
+      name: "Gland hand 11440",
       tax: "36.00 RS",
       sku: "0700185",
       price: 4000,
     },
     {
       id: 7,
-      img: "https://www.ks-international.com/media/catalog/product/cache/5cbd42b6a5a30dbac7552a8bcebb8809/0/0/0012736-web.webp",
-      name: "REAR AXLE WHEEL BEARING KIT",
+      img: "https://www.chanceparts.com/Uploads/pro/Wabco-Gland-hand-4522002120.140.1.jpg",
+      name: "Gland hand 12308",
       tax: "36.00 RS",
       sku: "0700185",
       price: 4000,
     },
     {
       id: 8,
-      img: "https://www.ks-international.com/media/catalog/product/cache/5cbd42b6a5a30dbac7552a8bcebb8809/0/0/0011706-web.webp",
-      name: "REAR AXLE WHEEL BEARING KIT",
+      img: "https://www.chanceparts.com/Uploads/pro/Gland-Hand-Phillips-12006.45.1.jpg",
+      name: "Wabco Gland hand 4522002120",
       tax: "36.00 RS",
       sku: "0700185",
       price: 4000,
     },
-   
-    
+    {
+      id: 9,
+      img: "https://www.chanceparts.com/Uploads/pro/Wabco-Button-valve-4630220200.464.1.jpg",
+      name: "Gland Hand Phillips 12006",
+      tax: "36.00 RS",
+      sku: "0700185",
+      price: 4000,
+    },
+    {
+      id: 10,
+      img: "https://www.chanceparts.com/Uploads/pro/Air-hose-with-gun.95.1.jpg",
+      name: "Coiled electrical cable 244621",
+      tax: "36.00 RS",
+      sku: "0700185",
+      price: 4000,
+    },
+    {
+      id: 11,
+      img: "https://www.chanceparts.com/Uploads/pro/Air-hose-with-gun.98.1.jpg",
+      name: "Iron 7 unit sets",
+      tax: "36.00 RS",
+      sku: "0700185",
+      price: 4000,
+    },
+    {
+      id: 12,
+      img: "https://www.chanceparts.com/Uploads/pro/Gland-hand-11441.247.1.jpg",
+      name: "Automatic Joystick valve HVD 705002333",
+      tax: "36.00 RS",
+      sku: "0700185",
+      price: 4000,
+    },
   ]);
   useEffect(() => {
     // const config = {
@@ -138,9 +168,12 @@ const AllProduct = () => {
   }
   return (
     <>
-      <Navbar2/>
-      <Navbar/>
-      <img src='https://www.chanceparts.com/Uploads/info/60ccb07493e7c.jpg' width='100%'/>
+      <Navbar2 />
+      <Navbar />
+      <img
+        src="https://www.chanceparts.com/Uploads/info/60ccb07493e7c.jpg"
+        width="100%"
+      />
       <Container>
         {/* <FilterContainer>
           <FilterHome>
@@ -153,58 +186,38 @@ const AllProduct = () => {
           </FilterHome>
         </FilterContainer> */}
 
-        
-      
-<div style={{display:'flex',flexDirection:'column'}}>
+        <div style={{ display: "flex", flexDirection: "column" }}>
           <LeftBar>
             <Filter>
               <Bar>
-                <div style={{backgroundColor:'rgba(16, 103, 138, 0.933)',width:'50px',height:'50px'}}>
-                <Category style={{color:'white',marginTop:'8px'}} />
+                <div
+                  style={{
+                    backgroundColor: "rgba(16, 103, 138, 0.933)",
+                    width: "50px",
+                    height: "50px",
+                  }}
+                >
+                  <Category style={{ color: "white", marginTop: "8px" }} />
                 </div>
-              <FilterTitle >
-                PRODUCT CATEGORIES
-              </FilterTitle>
+                <FilterTitle>PRODUCT CATEGORIES</FilterTitle>
               </Bar>
-              <hr width="245px" style={{marginTop:'-2px'}} />
-              <FilterText >
-              {'>'}  Air Brake System
-              </FilterText>
-              
-              <FilterText >
-              {'>'} Clutch System
-              </FilterText>
-              
-              <FilterText >
-              {'>'} Suspension
-              </FilterText>
-              
-              <FilterText >
-              {'>'} Body Parts
-              </FilterText>
-              <FilterText >
-              {'>'} Engine
-              </FilterText>
-              
-              <FilterText>
-              {'>'}  Brake
-              </FilterText>
-             
-              <FilterText >
-              {'>'} Clutch & FlyWheel
-              </FilterText>
-              <FilterText >
-              {'>'} Engine
-              </FilterText>
-              <FilterText >
-              {'>'} Axle & Trailer parts
-              </FilterText>
-              <FilterText >
-              {'>'} Steering
-              </FilterText>
-              <FilterText >
-              {'>'} Transmission
-              </FilterText>
+              <hr width="245px" style={{ marginTop: "-2px" }} />
+              <FilterText>{">"} Air Brake System</FilterText>
+
+              <FilterText>{">"} Clutch System</FilterText>
+
+              <FilterText>{">"} Suspension</FilterText>
+
+              <FilterText>{">"} Body Parts</FilterText>
+              <FilterText>{">"} Engine</FilterText>
+
+              <FilterText>{">"} Brake</FilterText>
+
+              <FilterText>{">"} Clutch & FlyWheel</FilterText>
+              <FilterText>{">"} Engine</FilterText>
+              <FilterText>{">"} Axle & Trailer parts</FilterText>
+              <FilterText>{">"} Steering</FilterText>
+              <FilterText>{">"} Transmission</FilterText>
               <hr width="200px" />
             </Filter>
           </LeftBar>
@@ -212,54 +225,89 @@ const AllProduct = () => {
           <SearchBar>
             <Filter>
               <Bar>
-                <div style={{backgroundColor:'rgba(16, 103, 138, 0.933)',width:'50px',height:'50px'}}>
-                <Category style={{color:'white',marginTop:'8px'}} />
+                <div
+                  style={{
+                    backgroundColor: "rgba(16, 103, 138, 0.933)",
+                    width: "50px",
+                    height: "50px",
+                  }}
+                >
+                  <Category style={{ color: "white", marginTop: "8px" }} />
                 </div>
-              <FilterTitle >
-                SEARCH
-              </FilterTitle>
+                <FilterTitle>SEARCH</FilterTitle>
               </Bar>
-              <hr width="245px" style={{marginTop:'-2px'}} />
-              <FilterText >
-              Product Search
-              </FilterText>
-              <input type='text' className="form-control" placeholder="Enter OEM no, Chance no etc"
-              style={{borderRadius:'8px',background:'whitesmoke',width:'220px',height:'40px',padding:'8px',marginLeft:'10px',marginTop:'10px'}}
+              <hr width="245px" style={{ marginTop: "-2px" }} />
+              <FilterText>Product Search</FilterText>
+              <input
+                type="text"
+                className="form-control"
+                placeholder="Enter OEM no, Chance no etc"
+                style={{
+                  borderRadius: "8px",
+                  background: "whitesmoke",
+                  width: "220px",
+                  height: "40px",
+                  padding: "8px",
+                  marginLeft: "10px",
+                  marginTop: "10px",
+                }}
               />
-              <FilterText >
-              Product Categories
-              </FilterText>
-              <select className="form-control"
-               style={{borderRadius:'8px',background:'whitesmoke',width:'220px',height:'40px',padding:'8px',marginLeft:'10px', marginTop:'10px'}}
-  
+              <FilterText>Product Categories</FilterText>
+              <select
+                className="form-control"
+                style={{
+                  borderRadius: "8px",
+                  background: "whitesmoke",
+                  width: "220px",
+                  height: "40px",
+                  padding: "8px",
+                  marginLeft: "10px",
+                  marginTop: "10px",
+                }}
               >
-                 <option>Air Brake System</option> 
-                 <option>Suspension</option> 
-                 <option>Body parts</option> 
-                 <option>Engine</option> 
+                <option>Air Brake System</option>
+                <option>Suspension</option>
+                <option>Body parts</option>
+                <option>Engine</option>
               </select>
-              
 
-              <FilterText >
-              Vehicle
-              </FilterText>
-              <select className="form-control"
-               style={{borderRadius:'8px',background:'whitesmoke',width:'220px',height:'40px',padding:'8px',marginLeft:'10px', marginTop:'10px'}}
-  
+              <FilterText>Vehicle</FilterText>
+              <select
+                className="form-control"
+                style={{
+                  borderRadius: "8px",
+                  background: "whitesmoke",
+                  width: "220px",
+                  height: "40px",
+                  padding: "8px",
+                  marginLeft: "10px",
+                  marginTop: "10px",
+                }}
               >
-                 <option>BMW</option> 
-                 <option>Toyota</option> 
-                 <option>Honda</option> 
-                 <option>MG</option> 
+                <option>BMW</option>
+                <option>Toyota</option>
+                <option>Honda</option>
+                <option>MG</option>
               </select>
-              <button style={{marginBottom:'10px',height:'40px',width:'100px',marginLeft:'10px',marginRight:'auto',marginTop:'20px',backgroundColor:'rgba(16, 103, 138, 0.933)',color:'white'}}>Search</button>
-              
+              <button
+                style={{
+                  marginBottom: "10px",
+                  height: "40px",
+                  width: "100px",
+                  marginLeft: "10px",
+                  marginRight: "auto",
+                  marginTop: "20px",
+                  backgroundColor: "rgba(16, 103, 138, 0.933)",
+                  color: "white",
+                }}
+              >
+                Search
+              </button>
             </Filter>
           </SearchBar>
-          </div>
-        
+        </div>
 
-        <div style={{ margin:'60px'}}>
+        <div style={{ margin: "55px" }}>
           <Productshow>
             {/* spro.length==0?<> Sorry No items to show</>: */}
             {spro.map((item) => (
@@ -269,11 +317,8 @@ const AllProduct = () => {
         </div>
         {/* <Pagination style={{marginLeft:'600px',marginRight:'100px'}}count={10} page={page} onChange={handlePageChange}/>
             <Footer /> */}
-            
-
-
       </Container>
-      <Footer/>
+      <Footer />
     </>
   );
 };
@@ -286,15 +331,14 @@ const Title = styled.h1`
 `;
 
 const Bar = styled.div`
-   display:flex;
-   width:245px;
-   flex-direction:row;
-   background-color:whitesmoke;
-   //border-style:groove;
-   border-bottom-color:whitesmoke;
+  display: flex;
+  width: 245px;
+  flex-direction: row;
+  background-color: whitesmoke;
+  //border-style:groove;
+  border-bottom-color: whitesmoke;
   text-align: center;
 `;
-
 
 const FilterContainer = styled.div`
   margin-top: 20px;
@@ -310,7 +354,6 @@ const Filter = styled.div`
   //margin: 20px;
   display: flex;
   flex-direction: column;
-  
 
   //height:40px;
   // background-color:white;
@@ -338,19 +381,20 @@ const LeftBar = styled.div`
   margin-left: 30px;
   margin-top: 55px;
   width: 250px;
- 
+
   border-color: whitesmoke;
-  border-style: groove;
+  border-style: ridge;
   // border-style:groove;
   box-shadow: 0 2px 2px rgb(11 25 28 / 10%);
 `;
+
 const SearchBar = styled.div`
   margin-left: 30px;
   margin-top: 55px;
   width: 250px;
-  margin-bottom:40px;
+  margin-bottom: 40px;
   border-color: whitesmoke;
-  border-style: groove;
+  border-style: ridge;
   // border-style:groove;
   box-shadow: 0 2px 2px rgb(11 25 28 / 10%);
 `;
@@ -360,9 +404,10 @@ const Right = styled.div`
 `;
 
 const FilterText = styled.span`
-  font-size: 14px;
+  font-size: 16px;
   padding: 8px;
-  
+  font-weight:300;
+  font-family:Montserrat;
   margin-left: 10px;
 `;
 const FilterHomeText = styled.span`
@@ -376,12 +421,12 @@ const SortText = styled.span`
   font-size: 14px;
 `;
 const FilterTitle = styled.span`
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
-  padding: 4px;
+  padding: 9px;
+  font-family:Helvatica;
   background-color: whitesmoke;
 `;
-
 const Select = styled.select`
   padding: 10px;
   margin-right: 20px;
@@ -390,283 +435,25 @@ const Option = styled.option``;
 
 const Productshow = styled.div`
   padding: 20px;
-  width:900px;
-  margin-top:0px;
+  width: 900px;
+  margin-top: 0px;
   display: flex;
   box-shadow: 0 10px 15px -3px rgba(46, 41, 51, 0.08),
     0 4px 6px -2px rgba(71, 63, 79, 0.16);
-   
-    
-  border-color:whitesmoke;
-  border-style:groove;
+
+  border-color: whitesmoke;
+  border-style: ridge;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
 `;
 
 const Container = styled.div`
-display:flex;
-flex-direction:row;
+  display: flex;
+  flex-direction: row;
 
   width: 1100px;
   margin-left: auto;
   margin-right: auto;
 `;
 
-
-// import styled from "styled-components";
-// //import Announcement from "../../../components/Announcement";
-// import Navbar from "../../../components/Navbar"
-// import Footer from "../../../components/footer/Footer";
-// import { useEffect, useState } from 'react';
-// //import css from '../index.module.css';
-
-// import {
-//     HomeOutlined
-//   } from "@material-ui/icons";
-// //import axios from "axios";
-// import SingleProduct from "../../../components/SingleProduct";
-
-// import { useRouter } from 'next/router'
-
-// const AllProduct = () => {
-//     const router = useRouter();
-//     const { id } = router.query;
-//     const [items, setItems] = useState([])
-//     const [pro, setPro] = useState([
-//       {
-//         id: 1,
-//         img: "https://www.ks-international.com/media/catalog/product/cache/5cbd42b6a5a30dbac7552a8bcebb8809/0/7/0700185_2.webp",
-//         name: "REAR AXLE WHEEL BEARING KIT",
-//         tax: "36.00 RS",
-//         sku: "0700185",
-//         price: 4000,
-//       },
-//       {
-//         id: 2,
-//         img: "https://www.ks-international.com/media/catalog/product/cache/5cbd42b6a5a30dbac7552a8bcebb8809/0/7/0700185_2.webp",
-//         name: "REAR AXLE WHEEL BEARING KIT",
-//         tax: "36.00 RS",
-//         sku: "0700185",
-//         price: 4000,
-//       },
-//       {
-//         id: 3,
-//         img: "https://www.ks-international.com/media/catalog/product/cache/5cbd42b6a5a30dbac7552a8bcebb8809/0/7/0700185_2.webp",
-//         name: "REAR AXLE WHEEL BEARING KIT",
-//         tax: "36.00 RS",
-//         sku: "0700185",
-//         price: 4000,
-//       },
-//       {
-//         id: 4,
-//         img: "https://www.ks-international.com/media/catalog/product/cache/5cbd42b6a5a30dbac7552a8bcebb8809/0/7/0700185_2.webp",
-//         name: "REAR AXLE WHEEL BEARING KIT",
-//         tax: "36.00 RS",
-//         sku: "0700185",
-//         price: 4000,
-//       },
-//       {
-//         id: 5,
-//         img: "https://www.ks-international.com/media/catalog/product/cache/5cbd42b6a5a30dbac7552a8bcebb8809/0/7/0700185_2.webp",
-//         name: "REAR AXLE WHEEL BEARING KIT",
-//         tax: "36.00 RS",
-//         sku: "0700185",
-//         price: 4000,
-//       },
-//     ])
-//     const [cat, setCategory] = useState({
-//         id:null,
-//         name:'',
-//         parent:'',
-//         status:0
-//     })
-//     useEffect(() => {
-        
-     
-           
-//     }, [])
-
-//     const handleSelectChange=(e)=>{     
-        
-      
-        
-//     }
-//     function Sort(slist,value)
-//     {
-      
-//     }
-
-
-
-// {/* {items.length==0? <div style={{marginLeft:'auto',marginRight:'auto',marginTop:'200px',fontSize:'22px'}}>
-//                 Sorry! ..Stock is Empty of this Category</div>:
-//                 <> */}
-
-//        {/* {
-//                  spro.map((item) => (
-//                     <ProductItem item={item} key={item.id} />
-
-//                 ))} */}          
-
-//     return (
-//         <>
-//         <Container>
-           
-//             <Navbar />
-//             <hr width='1520px'/>
-// {/*          
-//             <Title>Home</Title> */}
-            
-//             <FilterContainer>
-            
-//             <FilterHome>
-//                 <FilterHomeText>
-//                     <HomeOutlined/>
-//                     </FilterHomeText>
-//                     <FilterHomeText>
-//                         {">"} Unstiched {">"} Lawn
-//                     </FilterHomeText>
-//             </FilterHome>
-                
-                
-                    
-               
-               
-
-//             </FilterContainer>
-            
-//             <GridArea>
-//           <LeftBar>
-//             <Filter>
-//               <FilterTitle style={{ backgroundColor: "white" }}>
-//                 Categories
-//               </FilterTitle>
-//               <hr width="200px" />
-//               <FilterText style={{ backgroundColor: "white" }}>
-//                FAW
-//               </FilterText>
-//               <hr width="200px" />
-//             </Filter>
-//           </LeftBar>
-
-//           <Right>
-//             <h2>Real Axle</h2>
-//           </Right>
-      
-
-            
-//             <Productshow>
-//               {pro.map(it=>(
-//                  <SingleProduct item={it}/>
-                 
-//               ))
-
-//               }         
-       
-//             </Productshow>
-
-
-//             </GridArea>
-            
-
-         
-//         </Container>
-//          <Footer/> 
-//        </>
-//     );
-// };
-
-// export default AllProduct;
-
-
-
-
-
-
-// const Container = styled.div``;
-
-// const Title = styled.h1`
-//   margin: 20px;
-//   text-align: center;
-// `;
-
-// const Right = styled.div`
-//   margin-left: 30px;
-// `;
-// const FilterContainer = styled.div`
-// margin-top:20px;
-//   display: flex;
-//   justify-content: space-between;
-// `;
-// const GridArea = styled.div`
-//   display: flex;
-//   flex-direction:row;
-//   height:200px;
-  
-//   justify-content: space-between;
-// `;
-
-// const Filter = styled.div`
-//   //margin: 20px;
-//   display:flex;
-//   flex-direction:column;
-  
-//   //height:40px;
-//   // background-color:white;
-// `;
-
-// const FilterHome = styled.div`
-//   //margin: 20px;
-//   display:flex;
-//   flex-direction:row;
-//   margin-left:30px
-//   //height:40px;
-  
-// `;
-// const LeftBar = styled.div`
-//   margin-left:30px;
-//   margin-top:25px;
-//   width:650px;
-//   height:800px;
-//   // border-style:groove;
-//   box-shadow: 0 2px 2px rgb(11 25 28 / 10%);
-// `;
-
-// const FilterText = styled.span`
-//   font-size: 14px;
-//   padding:20px;
-//   margin-left:20px
-// `;
-// const FilterHomeText = styled.span`
-//   font-size: 14px;
-//   padding:6px;
-//   /* padding:20px;
-//   margin-top: 10px;
-//   margin-left:20px */
-// `;
-// const SortText = styled.span`
-//   font-size: 14px;
-  
-  
-// `;
-// const FilterTitle = styled.span`
-//   font-size: 16px;
-//   font-weight: 700;
-//   padding:20px;
-//   background-color:whitesmoke;
-// `;
-
-// const Select = styled.select`
-//   padding: 10px;
-//   margin-right: 20px;
-// `;
-// const Option = styled.option``;
-
-// const Productshow = styled.div`
-//     padding: 20px;
-//     display: flex;
-//     flex-direction:row;
-//     flex-wrap: wrap;
-//     justify-content: space-between;
-// `;

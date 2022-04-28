@@ -138,7 +138,7 @@ const Navbar2 = () => {
           <p style={{ marginTop: "9px",
               marginLeft: "10px",
               fontWeight: "200",}}>
-            mazglobal@gmail.com
+            info@mazglobal.com
           </p>
           <TextField
           style={{marginLeft:'auto',marginRight:'200px',paddingLeft:'8px',}}

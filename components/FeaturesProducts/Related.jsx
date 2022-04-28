@@ -61,7 +61,7 @@ const Related = () => {
               {box.map((it,key) => (
                 <Link key={key} href="/category/[id]" as={`/category/${it.id}`}>
                   <div className={ic.imgDiv} style={{marginBottom:'60px'}}>
-                  <h5 style={{ marginLeft:'10px',fontSize:'16px',fontWeight:'320' }}>{it.text}</h5>
+                  <h5 style={{ marginLeft:'10px',fontSize:'14px',fontWeight:'200' }}>{it.text}</h5>
                   <img src={it.img} height='200px' width='200px'/>
                   <p style={{ marginLeft:'20px',color:'rgba(16, 103, 138, 0.933)',fontSize:'20px' }}>{it.price} PKR</p>
                   <p style={{ marginLeft:'10px',color:'grey' }}>Incl. VAT : <strong>400 Rs</strong></p>

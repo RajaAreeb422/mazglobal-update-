@@ -27,9 +27,11 @@ const Navbar = () => {
   }, []);
   const depthLevel = 0;
  return (
-  <nav style={{display:'flex',flexDirection:'row'}} className={nav.stick}>
-     <Link href="/" as={`/`}>
-       <div style={{marginLeft:'160px'}}>
+   <>
+   
+  <nav style={{display:'flex',flexDirection:'row',height:'105px'}} className={nav.stick}>
+  <Link href="/" as={`/`}>
+       <div style={{marginLeft:'160px',marginTop:'-6px'}}>
         <Image  height='120px' width='180px' src='/Maz Global Logo-02.png'/>
         </div>
         </Link>
@@ -43,6 +45,7 @@ const Navbar = () => {
     ))}
    </ul>
   </nav>
+  </>
  );
 };
 
