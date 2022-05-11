@@ -150,75 +150,87 @@ const Faq = () => {
                 fontWeight: "300",
                 fontSize: "28px",
                 marginTop: "-10px",
-                fontFamily:'Halvatica'
+                fontFamily: "Halvatica",
               }}
             >
               F.A.Q
             </P>
 
-            <P style={{ fontWeight: "400" }}>
-              Q1. What is your terms of packing?
+            <P style={{ fontWeight: "bold" }}>
+              1- What if you don't have the part I'm looking for?
             </P>
             <P style={{ marginTop: "-10px" }}>
-              A: Generally, we pack our goods in neutral white boxes and brown
-              cartons. If you have legally registered patent, we can pack the
-              goods in your branded boxes after getting your authorization
-              letters.
+              It's not an issue if we don't have the part you require. We search
+              thousands of salvage yards for vehicle parts using an inventory
+              locating system. We can utilize this system to look for the part
+              you're looking for, or we can send you to another junkyard that
+              might have it. This service is provided as a convenience to our
+              customers, and it is one of the many characteristics that
+              distinguish us from others.
             </P>
 
-            <P style={{ fontWeight: "400" }}>
-              Q2. What is your terms of payment?
+            <P style={{ fontWeight: "bold" }}>
+              2- Are you able to provide parts for both new and old trucks?
             </P>
             <P style={{ marginTop: "-10px" }}>
-              A: T/T 30% as deposit, and 70% before delivery. We will show you
-              the photos of the products and packages before you pay the
-              balance.
+              Yes, our junkyard has a large variety of trucks. We also have a
+              large selection of vintage vehicle parts.
             </P>
 
-            <P style={{ fontWeight: "400" }}>
-              Q3. What is your terms of delivery?
-            </P>
-            <P style={{ marginTop: "-10px" }}>A: EXW, FOB, CFR, CIF.</P>
-
-            <P style={{ fontWeight: "400" }}>
-              Q4. How about your delivery time?
+            <P style={{ fontWeight: "bold" }}>
+              3- Do you test all of your products before they are delivered?
             </P>
             <P style={{ marginTop: "-10px" }}>
-              A: Generally, it will take 30 to 60 days after receiving your
-              advance payment. The specific delivery time depends on the items
-              and the quantity of your order.
-            </P>
-            <P style={{ fontWeight: "400" }}>
-              Q5. Can you produce according to the samples?
-            </P>
-            <P style={{ marginTop: "-10px" }}>
-              A: Yes, we can produce by your samples or technical drawings. We
-              can build the molds and fixtures.
+              Yes, we test everything before we ship it.
             </P>
 
-            <P style={{ fontWeight: "400" }}>Q6. What is your sample policy?</P>
-            <P style={{ marginTop: "-10px" }}>
-              A: We can supply the sample if we have ready parts in stock, but
-              the customers have to pay the sample cost and the courier cost.
-            </P>
-            <P style={{ fontWeight: "400" }}>
-              Q7. Do you test all your goods before delivery?
+            <P style={{ fontWeight: "bold" }}>
+              4- what is your estimated delivery time?{" "}
             </P>
             <P style={{ marginTop: "-10px" }}>
-              A: Yes, we have 100% test before delivery.
+              After receiving your advance payment, it usually takes 30 to 60
+              days. The delivery time is determined by the goods and amount of
+              your order.
+            </P>
+            <P style={{ fontWeight: "bold" }}>
+              5- What are the most common vehicle parts to be replaced?
+            </P>
+            <P style={{ marginTop: "-10px" }}>
+              Tires, clutches, and brakes are the most often replaced components
+              on heavy-duty vehicles, which should come as no surprise given
+              that they are subjected to the most wear and tear.
+            </P>
+              <br /> <br /><br />
+            <P style={{ fontWeight: "bold" }}>
+              6- What's the difference between original equipment manufacturer
+              (OEM) and aftermarket parts?{" "}
+            </P>
+            <P style={{ marginTop: "-10px" }}>
+              OEM stands for Original Equipment Maker, meaning these parts are
+              produced by the car's manufacturer. Non-manufacturer firms, on the
+              other hand, design aftermarket parts. When using aftermarket car
+              parts, make sure they're compatible with your vehicle and that
+              they don't void any warranties or lease agreements you may have on
+              the vehicle.
+            </P>
+            <P style={{ fontWeight: "bold" }}>
+              7- When I'm done with my old parts, what should I do with them?
+            </P>
+            <P style={{ marginTop: "-10px" }}>
+              It's not as simple as tossing old components in the garbage. If
+              you need to get rid of outdated or damaged parts, you can sell
+              them to a parts dealer or shop, sell them for scrap metal, or
+              recycle them if all else fails.
             </P>
 
-            <P style={{ fontWeight: "400" }}>
-              Q8: How do you make our business long-term and good relationship?
+            <P style={{ fontWeight: "bold" }}>
+              8- Why is it necessary to analyze components?{" "}
             </P>
             <P style={{ marginTop: "-10px" }}>
-              1. We keep good quality and competitive price to ensure our
-              customers benefit
-            </P>
-            <P style={{ marginTop: "-10px" }}>
-              2. We respect every customer as our friend and we sincerely do
-              business and make friends with them, no matter where they come
-              from.
+              To ensure that the material, as well as the join, can withstand
+              the forces in such an impact, it is critical to determine the
+              material's strength. Other fabrics in automobiles are put through
+              rigorous testing to assure their long-term durability.{" "}
             </P>
           </Productshow>
         </div>
@@ -237,7 +249,7 @@ const Title = styled.h1`
 
 const P = styled.p`
   font-weight: 320;
-  font-family:Montserra;
+  font-family: Montserra;
 `;
 const Bar = styled.div`
   display: flex;
