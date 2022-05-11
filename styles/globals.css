@@ -15,11 +15,6 @@ a {
   box-sizing: border-box;
 }
 
-{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
 body {
   font-family: sans-serif;
@@ -149,4 +144,16 @@ header {
   left: 100%;
   top: -7px;
   color:white
+}
+.back-to-top {
+  position: fixed;
+  bottom: 50px;
+  right: 20px;
+  text-decoration: none;
+  width: 50px;
+  padding: 10px;
+  font-family: sans-serif;
+  color: #fff;
+  background: #000;
+  border-radius: 100px;
 }

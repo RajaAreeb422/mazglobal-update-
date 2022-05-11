@@ -9,7 +9,10 @@ import FeaturedProducts from '../components/FeaturesProducts/FeaturedProducts'
 import AboutUs from '../components/AboutUs'
 import CustomNav from '../components/CustomNav'
 import Navbar from '../components/Navbar'
+import Backtotop from '../components/Backtotop'
+
 export default function Home() {
+
   return (
     <>
     <Navbar2/>
@@ -24,8 +27,8 @@ export default function Home() {
     <div style={{marginTop:'40px',marginBottom:'40px',textAlign:'center'}}>
     {/* <h2 style={{fontWeight:'500'}}>COMPANY OVERVIEW</h2> */}
     </div>
-    <Footer/>
-    
+    <Footer/>  
+    <Backtotop/>
     </>
       )
 }

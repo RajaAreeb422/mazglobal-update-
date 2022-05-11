@@ -8,6 +8,7 @@ import { useEffect, useState } from "react";
 import SingleProduct from "../components/SingleProduct";
 import { HomeOutlined, Category } from "@material-ui/icons";
 import Navbar from "../components/Navbar";
+import Backtotop from "../components/Backtotop";
 
 const Faq = () => {
   useEffect(() => {
@@ -236,6 +237,7 @@ const Faq = () => {
         </div>
       </Container>
       <Footer />
+      <Backtotop/>
     </>
   );
 };
