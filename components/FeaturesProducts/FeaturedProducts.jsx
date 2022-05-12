@@ -84,9 +84,9 @@ const FeaturedProducts = () => {
               {box.map((it,key) => (
                 <Link key={key} href="/category/[id]" as={`/category/${it.id}`}>
                   <div className={ic.imgDiv}>
+                  <img src={it.img} height='150px' width='150px'style={{marginBottom :'10px'}}/>
+                  {/* <p style={{ marginLeft:'20px',color:'rgba(16, 103, 138, 0.933)',fontSize:'20px' }}>{it.price} PKR</p> */}
                   <h5 style={{ marginLeft:'10px',fontSize:'16px',fontWeight:'320' }}>{it.text}</h5>
-                  <img src={it.img} height='150px' width='150px'/>
-                  <p style={{ marginLeft:'20px',color:'rgba(16, 103, 138, 0.933)',fontSize:'20px' }}>{it.price} PKR</p>
                   <p style={{ marginLeft:'10px',color:'grey' }}>Incl. VAT : <strong>400 Rs</strong></p>
                   </div>
               

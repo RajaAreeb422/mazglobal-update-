@@ -286,7 +286,7 @@ const FilterText = styled.span`
   font-size: 16px;
   padding: 8px;
   font-weight:300;
-  font-family:Montserrat;
+  font-family: Arial, Helvetica, sans-serif;
   margin-left: 10px;
 `;
 const FilterHomeText = styled.span`
@@ -303,7 +303,7 @@ const FilterTitle = styled.span`
   font-size: 16px;
   font-weight: 500;
   padding: 9px;
-  font-family:Helvatica;
+  font-family: Arial, Helvetica, sans-serif;
   background-color: whitesmoke;
 `;
 const Select = styled.select`

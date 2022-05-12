@@ -200,8 +200,7 @@ const Faq = () => {
               Tires, clutches, and brakes are the most often replaced components
               on heavy-duty vehicles, which should come as no surprise given
               that they are subjected to the most wear and tear.
-            </P>
-              <br /> <br /><br />
+            </P> 
             <P style={{ fontWeight: "bold" }}>
               6- What's the difference between original equipment manufacturer
               (OEM) and aftermarket parts?{" "}
@@ -233,6 +232,12 @@ const Faq = () => {
               material's strength. Other fabrics in automobiles are put through
               rigorous testing to assure their long-term durability.{" "}
             </P>
+            <P style={{ fontWeight: "bold" }}>
+            9-	Is there a warranty on auto parts?{" "}
+            </P>
+            <P style={{ marginTop: "-10px" }}>
+            Unless otherwise noted on your receipt, we offer a one-year part replacement warranty.{" "}
+            </P>
           </Productshow>
         </div>
       </Container>
@@ -251,7 +256,7 @@ const Title = styled.h1`
 
 const P = styled.p`
   font-weight: 320;
-  font-family: Montserra;
+  font-family:  Arial, Helvetica, sans-serif;
 `;
 const Bar = styled.div`
   display: flex;
@@ -330,7 +335,7 @@ const FilterText = styled.span`
   font-size: 16px;
   padding: 8px;
   font-weight: 300;
-  font-family: Montserrat;
+  font-family:  Arial, Helvetica, sans-serif;
   margin-left: 10px;
 `;
 const FilterHomeText = styled.span`
@@ -347,7 +352,7 @@ const FilterTitle = styled.span`
   font-size: 16px;
   font-weight: 500;
   padding: 9px;
-  font-family: Helvatica;
+  font-family:  Arial, Helvetica, sans-serif;
   background-color: whitesmoke;
 `;
 

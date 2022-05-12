@@ -17,23 +17,27 @@
      .h4{
         text-align: center;
         font-size:26px ;
-        font-family: Helvetica;
+        font-family: Arial, Helvetica, sans-serif;
     }
 
     .imgDiv{
             display:'flex';
             flex-direction:'column';
             align-content:'space-between';
-            transition: transform .4s;
+            transition: transform .4s ease;
             
-            border-left: 1px solid grey;
+            /* border-left: 1px solid grey; */
             height: 300px;
-            padding-left:'2px';
+            padding: 10px 10px 10px 10px;
+            margin-left: 10px;
           
     }
-    .imgDiv :hover{
-        transition:scale(1.6);
+    .imgDiv img{
+        transition: transform .5s ease;
+        border: 1px solid black;
+    }
+    .imgDiv img:hover{
+        transform: scale(1.1); 
         transition-delay: 0.3s ease;
-        width: 200px;
         box-shadow: 0 2px 2px rgb(11 25 28 / 10%);
     }

@@ -9,7 +9,7 @@ import {
   Person,
   PhoneOutlined,
   EmailOutlined,
-  Settings,HighQuality,LocalShipping
+  Settings,FlightTakeoff,LocalPolice,Group
 } from "@material-ui/icons";
 import { Avatar, Badge } from "@material-ui/core";
 import router, { useRouter } from "next/router";
@@ -41,7 +41,7 @@ const Mission = () => {
       </div>
       </div>
       <div className={nav.mitem}>
-       <HighQuality style={{height:'100px',width:'100px'}}/>
+       <LocalPolice style={{height:'100px',width:'100px'}}/>
        <div style={{display:'flex',flexDirection:'column'}}>
        <p style={{fontWeight:'600',fontSize:'20px',textAlign:'center'}}>OUR QUALITY</p>
        <p style={{alignItems:'justify-content',marginLeft:'40px',fontWeight:'300'}}>
@@ -49,7 +49,7 @@ const Mission = () => {
       </div>
       </div>
       <div className={nav.mitem}>
-       <LocalShipping style={{height:'100px',width:'100px'}}/>
+       <Group style={{height:'100px',width:'100px'}}/>
        <div style={{display:'flex',flexDirection:'column'}}>
        <p style={{fontWeight:'600',fontSize:'20px',textAlign:'center'}}>OUR SUPPLIERS</p>
        <p style={{alignItems:'justify-content',marginLeft:'40px',fontWeight:'300'}}>Help middle and small foreign importers to get quality aftermarket products  

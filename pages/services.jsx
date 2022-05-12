@@ -301,12 +301,12 @@ const Title = styled.h1`
 
 const H= styled.p`
   font-weight:400;
-  font-family:Helvatica;
+  font-family: Arial, Helvetica, sans-serif;
   font-size:24px;
 `;
 const P= styled.p`
   font-weight:300;
-  font-family:Montserrat;
+  font-family: Arial, Helvetica, sans-serif;
   font-size:16px;
 `;
 const Bar = styled.div`
@@ -388,7 +388,7 @@ const FilterText = styled.span`
   font-size: 16px;
   padding: 8px;
   font-weight:300;
-  font-family:Montserrat;
+  font-family: Arial, Helvetica, sans-serif;
   margin-left: 10px;
 `;
 const FilterHomeText = styled.span`
@@ -405,7 +405,7 @@ const FilterTitle = styled.span`
   font-size: 16px;
   font-weight: 500;
   padding: 9px;
-  font-family:Helvatica;
+  font-family: Arial, Helvetica, sans-serif;
   background-color: whitesmoke;
 `;
 
